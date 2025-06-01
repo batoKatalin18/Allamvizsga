@@ -1,42 +1,26 @@
-import React, { useState } from 'react';
+// src/App.js
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import SearchPage from './pages/SearchPage';
+import UploadPage from './pages/UploadPage';
 
 function App() {
-  const [query, setQuery] = useState('');
-  const [results, setResults] = useState([]);
-
-  const handleSearch = async () => {
-    if (!query.trim()) return;
-
-    try {
-      const response = await fetch(`http://localhost:8000/search?query=${encodeURIComponent(query)}`);
-      const data = await response.json();
-      setResults(data);
-    } catch (error) {
-      console.error('Hiba a keresés során:', error);
-    }
-  };
-
   return (
-    <div style={{ padding: '2rem', fontFamily: 'Arial' }}>
-      <h1>TDK Keresés</h1>
-      <input
-        type="text"
-        placeholder="Írd be a keresett nevet vagy címet..."
-        value={query}
-        onChange={(e) => setQuery(e.target.value)}
-        style={{ padding: '0.5rem', width: '300px', marginRight: '1rem' }}
-      />
-      <button onClick={handleSearch} style={{ padding: '0.5rem 1rem' }}>Keresés</button>
-
-      <ul style={{ marginTop: '2rem' }}>
-        {results.map((item, index) => (
-          <li key={index} style={{ marginBottom: '1rem' }}>
-            <strong>{item.title}</strong>
-          </li>
-        ))}
-      </ul>
-    </div>
+    <Router>
+      <header className="navbar">
+        <div className="navbar-title">📚 TDK Böngésző</div>
+        <nav className="navbar-links">
+          <Link to="/" className="nav-button">Keresés</Link>
+          <Link to="/upload" className="nav-button">Feltöltés</Link>
+        </nav>
+      </header>
+      <Routes>
+        <Route path="/" element={<SearchPage />} />
+        <Route path="/upload" element={<UploadPage />} />
+      </Routes>
+    </Router>
   );
 }
 
 export default App;
+
