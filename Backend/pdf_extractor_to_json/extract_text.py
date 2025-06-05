@@ -23,8 +23,7 @@ def extract_major(text):
     return text.strip()
 
 
-
-def extract_projects_from_pdf(pdf_path, hardcoded_year=2014):
+def extract_projects_from_pdf(pdf_path, hardcoded_year=2015):
     projects = []
 
     try:
@@ -152,6 +151,7 @@ def extract_projects_from_pdf(pdf_path, hardcoded_year=2014):
                     continue
 
                 # --- Kulcsszavak blokk (csak ha van aktuális projekt) ---
+                # --- Kulcsszavak blokk (csak ha van aktuális projekt) ---
                 if current_project and line.startswith("Kulcsszavak:"):
                     after_colon = line.split(":", 1)[1].strip()
                     if not after_colon:
@@ -160,22 +160,28 @@ def extract_projects_from_pdf(pdf_path, hardcoded_year=2014):
                         current_project = None
                         continue
 
-                    keyword_lines = [after_colon]
-                    i += 1
+                    italic_keywords = []
+                    # Nézzük meg az első sort külön, hátha vannak benne dőlt szavak
+                    line_words = [w for w in words if w["text"] in line]
+                    italic_line_words = [w for w in line_words if "Italic" in w["fontname"] or "Oblique" in w["fontname"]]
+                    italic_keywords.extend([w["text"] for w in italic_line_words])
 
+                    i += 1
                     while i < len(text_lines):
                         next_line = text_lines[i].strip()
                         if not next_line:
                             i += 1
                             continue
-                        line_words = [w for w in words if next_line and w["text"] in next_line]
-                        if any("Bold" in w["fontname"] for w in line_words):
+                        line_words = [w for w in words if w["text"] in next_line]
+                        italic_line_words = [w for w in line_words if "Italic" in w["fontname"] or "Oblique" in w["fontname"]]
+                        if not italic_line_words:
                             break
-                        keyword_lines.append(next_line)
+                        italic_keywords.extend([w["text"] for w in italic_line_words])
                         i += 1
 
-                    keyword_block = " ".join(keyword_lines)
-                    current_project["keywords"] = [kw.strip() for kw in keyword_block.split(",") if kw.strip()]
+                    # kulcsszavak vesszővel vannak elválasztva, lehet, hogy egy-egy szó volt külön dőlt betűs szóként
+                    joined = " ".join(italic_keywords)
+                    current_project["keywords"] = [kw.strip() for kw in joined.split(",") if kw.strip()]
                     projects.append(current_project)
                     current_project = None
                     continue
@@ -197,3 +203,5 @@ if __name__ == "__main__":
     result = extract_projects_from_pdf(test_path)
     from pprint import pprint
     pprint(result)
+
+#doltbetus kell legyen a teljes kulcszavas lista

@@ -6,7 +6,14 @@ function UploadPage() {
   const [year, setYear] = useState('');
   const [existingYears, setExistingYears] = useState([]);
   const [message, setMessage] = useState('');
-  const [messageType, setMessageType] = useState(''); // 'success' vagy 'error'
+  const [messageType, setMessageType] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
+
+  // Bejelentkezéshez szükséges state-ek
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
+  const [loginError, setLoginError] = useState('');
 
   useEffect(() => {
     fetch('http://localhost:8000/filters')
@@ -26,6 +33,7 @@ function UploadPage() {
       return;
     }
 
+    setIsLoading(true);
     const formData = new FormData();
     formData.append('file', file);
     formData.append('year', year);
@@ -49,35 +57,117 @@ function UploadPage() {
         setMessage('Ismeretlen hiba.');
         setMessageType('error');
       }
-    } catch (err) {
-      setMessage('Hálózati hiba: ' + err.message);
+    } catch (error) {
+      console.error('Hiba feltöltéskor:', error);
+      setMessage('Hiba történt a feltöltés során.');
       setMessageType('error');
+    } finally {
+      setIsLoading(false);
     }
   };
 
+const handleLogin = async () => {
+  setLoginError('');
+  const formData = new URLSearchParams();
+  formData.append('username', username);
+  formData.append('password', password);
+
+  try {
+    const res = await fetch('http://localhost:8000/login', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded',
+      },
+      body: formData.toString(),
+    });
+
+    const data = await res.json();
+
+    if (data.success) {
+      setIsAuthenticated(true);
+    } else {
+      setLoginError(data.detail || 'Sikertelen bejelentkezés.');
+    }
+  } catch (err) {
+    console.error('Bejelentkezési hiba:', err);
+    setLoginError('Hiba történt a bejelentkezés során.');
+  }
+};
+
+
+  if (!isAuthenticated) {
+    return (
+      <div className="login-wrapper">
+        <div className="login-box">
+          <h2>Bejelentkezés</h2>
+          <input
+            type="text"
+            placeholder="Felhasználónév"
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
+          />
+          <input
+            type="password"
+            placeholder="Jelszó"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
+          <button onClick={handleLogin}>Bejelentkezés</button>
+          {loginError && <p className="login-error">{loginError}</p>}
+        </div>
+      </div>
+    );
+  }
+
   return (
-    <div className="upload-container">
-      <h2>Új JSON feltöltése</h2>
+    <div className="upload-layout">
+      <div className="left-column">
+        <div className="upload-form">
+          <h2>Fájl feltöltése</h2>
+          <input type="file" onChange={(e) => setFile(e.target.files[0])} />
+          <input
+            type="text"
+            placeholder="Év"
+            value={year}
+            onChange={(e) => setYear(e.target.value)}
+          />
+          <button onClick={handleUpload}>Feltöltés</button>
+          {isLoading && <div className="spinner" />}
+          {message && (
+            <p className={messageType === 'success' ? 'success-message' : 'error-message'}>
+              {message}
+            </p>
+          )}
+        </div>
+        <div className="existing-years">
+          <h3>Már feltöltött évek</h3>
+          <ul>
+            {existingYears.map((y, index) => (
+              <li key={index}>{y}</li>
+            ))}
+          </ul>
+        </div>
+      </div>
 
-      <input type="file" accept=".json" onChange={(e) => setFile(e.target.files[0])} />
-      <input
-        type="number"
-        placeholder="Év (pl. 2023)"
-        value={year}
-        onChange={(e) => setYear(e.target.value)}
-      />
-      <button onClick={handleUpload}>Feltöltés</button>
-
-      {message && (
-        <p className={messageType === 'success' ? 'message success' : 'message error'}>
-          {message}
-        </p>
-      )}
-
-      <h3>Már feltöltött évek:</h3>
-      <ul>
-        {existingYears.map((y, i) => <li key={i}>{y}</li>)}
-      </ul>
+      <div className="right-column">
+        <div className="json-sample">
+          <h3>JSON példa</h3>
+          <pre>
+{`{
+  "major": "Informatika",
+  "year": 2015,
+  "title": "Dolgozat címe",
+  "students": [{"name": "Név", 
+                "major": "Sapientia EMTE, Informatika szak, 3. év"}],
+  "teachers": [{"name": "Oktató", 
+                "university": "Sapientia EMTE"}],
+  "content": "Dolgozatom célja ... ",
+  "keywords": ["kulcsszó1", "kulcsszó2", ...],
+  "generated_keywords": ["kulcsszó3", "kulcsszó4", ...]
+}`}
+          </pre>
+        </div>
+      </div>
     </div>
   );
 }

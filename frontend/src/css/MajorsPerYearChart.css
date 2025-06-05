@@ -1,0 +1,38 @@
+/* MajorsPerYearChart.css */
+
+.stats-container h3 {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+label {
+  margin-right: 0.5rem;
+  font-weight: 500;
+  color: #444;
+}
+
+#year-select {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  background-color: #f8f8f8;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+#year-select:hover {
+  border-color: #999;
+  background-color: #f0f0f0;
+}
+
+#year-select:focus {
+  outline: none;
+  border-color: #27aeef;
+  box-shadow: 0 0 5px rgba(39, 174, 239, 0.5);
+}
+
+.stats-container p {
+  margin-top: 1rem;
+  color: #666;
+}

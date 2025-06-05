@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from routes import search  # majd csináljuk meg
+from routes import search, upload, stats_routes # majd csináljuk meg
 
 app = FastAPI()
 
@@ -15,3 +15,5 @@ app.add_middleware(
 
 # Regisztráljuk a route-okat
 app.include_router(search.router)
+app.include_router(upload.router)
+app.include_router(stats_routes.router)
