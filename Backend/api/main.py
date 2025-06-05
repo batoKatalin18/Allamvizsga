@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from routes import search, upload, stats_routes # majd csináljuk meg
+from routes import search, upload, stats_routes 
 
 app = FastAPI()
 
