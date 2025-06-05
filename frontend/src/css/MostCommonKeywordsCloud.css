@@ -1,0 +1,55 @@
+.keywords-cloud-container {
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 30px auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.keywords-cloud-container:hover {
+  transform: translateY(-2px);
+}
+
+.keywords-cloud-container h3 {
+  margin-bottom: 16px;
+  font-size: 1.8rem;
+  color: #333;
+  font-weight: 600;
+}
+
+.dropdown-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.dropdown-group label {
+  font-weight: 500;
+  margin-right: 5px;
+  color: #444;
+}
+
+.dropdown-group select {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  font-size: 1rem;
+}
+
+.wordcloud-svg {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+

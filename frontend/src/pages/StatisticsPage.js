@@ -2,6 +2,7 @@
 import PapersPerYearChart from '../components/PapersPerYearChart';
 import MajorsPerYearChart from '../components/MajorsPerYearChart';
 import TopTeachersChart from '../components/TopTeachersChart';
+import MostCommonKeywordsCloud from '../components/MostCommonKeywordsCloud';
 
 function StatisticsPage() {
   return (
@@ -9,6 +10,7 @@ function StatisticsPage() {
       <PapersPerYearChart />
       <MajorsPerYearChart />
       <TopTeachersChart />
+      <MostCommonKeywordsCloud />
     </div>
   );
 }

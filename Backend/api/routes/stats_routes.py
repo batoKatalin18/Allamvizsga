@@ -108,6 +108,42 @@ def get_top_teachers(
     data = [{"name": bucket["key"], "count": bucket["doc_count"]} for bucket in buckets]
     return data
 
+@router.get("/api/most-common-keywords")
+def get_most_common_keywords(
+    year: str = Query(...),
+    major: str = Query("all")
+):
+    must_clauses = []
+
+    if year != "all":
+        must_clauses.append({"term": {"year": int(year)}})
+    if major != "all":
+        must_clauses.append({"term": {"major.keyword": major}})
+
+    body = {
+        "size": 10000,  # vagy amennyi dokumentumra szükséged van
+        "_source": ["keywords"],
+        "query": {
+            "bool": {
+                "must": must_clauses
+            }
+        }
+    }
+
+    res = es.search(index=INDEX_NAME, body=body)
+    keyword_counter = {}
+
+    for hit in res["hits"]["hits"]:
+        keywords = hit["_source"].get("keywords", [])
+        for kw in keywords:
+            kw = kw.lower()
+            keyword_counter[kw] = keyword_counter.get(kw, 0) + 1
+
+    sorted_keywords = sorted(keyword_counter.items(), key=lambda x: -x[1])[:100]
+
+    return [{"text": k, "value": v} for k, v in sorted_keywords]
+
+
 
 
 
