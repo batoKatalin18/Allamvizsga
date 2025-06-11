@@ -3,6 +3,12 @@ from elasticsearch import Elasticsearch
 import json
 import logging
 import re
+import os
+from dotenv import load_dotenv
+from passlib.hash import bcrypt
+
+# Betöltjük a .env fájl tartalmát
+load_dotenv()
 
 router = APIRouter()
 
@@ -79,9 +85,9 @@ async def upload_json(file: UploadFile, year: str = Form(...)):
 
 @router.post("/login")
 def login(username: str = Form(...), password: str = Form(...)):
-    ADMIN_USERNAME = "admin"
-    ADMIN_PASSWORD = "titok123"
+    ADMIN_USERNAME = os.getenv("ADMIN_USERNAME")
+    ADMIN_PASSWORD_HASH = os.getenv("ADMIN_PASSWORD_HASH")
 
-    if username == ADMIN_USERNAME and password == ADMIN_PASSWORD:
+    if username == ADMIN_USERNAME and bcrypt.verify(password, ADMIN_PASSWORD_HASH):
         return {"success": True}
     return {"success": False, "detail": "Hibás felhasználónév vagy jelszó."}

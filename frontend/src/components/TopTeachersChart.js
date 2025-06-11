@@ -92,10 +92,10 @@ return (
         <BarChart data={teacherData} margin={{ top: 20, right: 30, left: 20, bottom: 5 }}>
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="name" angle={-30} textAnchor="end" interval={0} height={100} />
-          <YAxis />
+          <YAxis allowDecimals={false} />
           <Tooltip />
           <Legend />
-          <Bar dataKey="count" fill="#f47560" />
+          <Bar dataKey="count" fill="#f589b0" />
         </BarChart>
       </ResponsiveContainer>
     ) : (

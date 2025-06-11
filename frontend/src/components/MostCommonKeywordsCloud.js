@@ -11,6 +11,7 @@ const MostCommonKeywordsCloud = () => {
   const [selectedYear, setSelectedYear] = useState('');
   const [selectedMajor, setSelectedMajor] = useState('');
   const [keywords, setKeywords] = useState([]);
+  const [loading, setLoading] = useState(false);
   const svgRef = useRef();
 
   useEffect(() => {
@@ -47,80 +48,87 @@ const MostCommonKeywordsCloud = () => {
         url += `&major=${encodeURIComponent(selectedMajor)}`;
       }
 
+      setLoading(true);
       axios.get(url)
-        .then(res => setKeywords(res.data));
+        .then(res => setKeywords(res.data))
+        .catch(() => setKeywords([]))
+        .finally(() => setLoading(false));
     }
   }, [selectedYear, selectedMajor]);
 
   useEffect(() => {
-  if (keywords.length > 0) {
-    const colors = ["#ea5545", "#f46a9b", "#bdcf32", "#87bc45", "#27aeef", "#b33dc6", "#ef9b20", "#edbf33", "#ede15b"];
+    if (keywords.length > 0) {
+      const colors = ["#ea5545", "#f46a9b", "#bdcf32", "#87bc45", "#27aeef", "#b33dc6", "#ef9b20", "#edbf33", "#ede15b"];
 
-    const layout = cloud()
-      .size([600, 400])
-      .words(keywords.map(d => ({ text: d.text, size: 10 + d.value * 3 })))
-      .padding(5)
-      .rotate(() => ~~(Math.random() * 2) * 90)
-      .font('Impact')
-      .fontSize(d => d.size)
-      .on('end', draw);
+      const layout = cloud()
+        .size([600, 400])
+        .words(keywords.map(d => ({ text: d.text, size: 10 + d.value * 3 })))
+        .padding(5)
+        .rotate(() => ~~(Math.random() * 2) * 90)
+        .font('Impact')
+        .fontSize(d => d.size)
+        .on('end', draw);
 
-    layout.start();
+      layout.start();
 
-    function draw(words) {
-      const svg = d3.select(svgRef.current);
-      svg.selectAll('*').remove();
+      function draw(words) {
+        const svg = d3.select(svgRef.current);
+        svg.selectAll('*').remove();
 
-      svg
-        .attr('width', 600)
-        .attr('height', 400)
-        .append('g')
-        .attr('transform', 'translate(300,200)')
-        .selectAll('text')
-        .data(words)
-        .enter()
-        .append('text')
-        .style('font-size', d => `${d.size}px`)
-        .style('font-family', 'Impact')
-        .style('fill', () => colors[Math.floor(Math.random() * colors.length)])
-        .attr('text-anchor', 'middle')
-        .attr('transform', d => `translate(${d.x},${d.y})rotate(${d.rotate})`)
-        .text(d => d.text);
+        svg
+          .attr('width', 600)
+          .attr('height', 400)
+          .append('g')
+          .attr('transform', 'translate(300,200)')
+          .selectAll('text')
+          .data(words)
+          .enter()
+          .append('text')
+          .style('font-size', d => `${d.size}px`)
+          .style('font-family', 'Impact')
+          .style('fill', () => colors[Math.floor(Math.random() * colors.length)])
+          .attr('text-anchor', 'middle')
+          .attr('transform', d => `translate(${d.x},${d.y})rotate(${d.rotate})`)
+          .text(d => d.text);
+      }
     }
-  }
-}, [keywords]);
+  }, [keywords]);
 
+  return (
+    <div className="stats-container">
+      <h3>Leggyakoribb kulcsszavak</h3>
 
-return (
-  <div className="stats-container">
-    <h3>Leggyakoribb kulcsszavak</h3>
+      <div className="dropdown-group">
+        <label>Válassz évet:</label>
+        <select value={selectedYear} onChange={e => setSelectedYear(e.target.value)}>
+          {years.map(year => (
+            <option key={year} value={year}>{year === 'all' ? 'Összes év' : year}</option>
+          ))}
+        </select>
 
-    <div className="dropdown-group">
-      <label>Válassz évet:</label>
-      <select value={selectedYear} onChange={e => setSelectedYear(e.target.value)}>
-        {years.map(year => (
-          <option key={year} value={year}>{year === 'all' ? 'Összes év' : year}</option>
-        ))}
-      </select>
+        {selectedYear !== 'all' && (
+          <>
+            <label>Válassz szakot:</label>
+            <select value={selectedMajor} onChange={e => setSelectedMajor(e.target.value)}>
+              {majors.map(m => (
+                <option key={m} value={m}>{m === 'all' ? 'Összes szak' : m}</option>
+              ))}
+            </select>
+          </>
+        )}
+      </div>
 
-      {selectedYear !== 'all' && (
-        <>
-          <label>Válassz szakot:</label>
-          <select value={selectedMajor} onChange={e => setSelectedMajor(e.target.value)}>
-            {majors.map(m => (
-              <option key={m} value={m}>{m === 'all' ? 'Összes szak' : m}</option>
-            ))}
-          </select>
-        </>
-      )}
+      <div className="wordcloud-svg">
+        {loading ? (
+          <p>Betöltés...</p>
+        ) : keywords.length > 0 ? (
+          <svg ref={svgRef}></svg>
+        ) : (
+          <p>Nincs elérhető kulcsszó a kiválasztott évre és szakra.</p>
+        )}
+      </div>
     </div>
-
-    <div className="wordcloud-svg">
-      <svg ref={svgRef}></svg>
-    </div>
-  </div>
-);
-
+  );
 };
 
 export default MostCommonKeywordsCloud;

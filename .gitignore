@@ -17,3 +17,6 @@ frontend/build/
 # OS fájlok
 .DS_Store
 Thumbs.db
+
+# Environment config
+.env

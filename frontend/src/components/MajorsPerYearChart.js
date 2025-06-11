@@ -33,7 +33,7 @@ const MajorsPerYearChart = () => {
 
   return (
     <div className="stats-container">
-      <h3>Szakosztályok eloszlása évente</h3>
+      <h3>Szakosztályok dolgozatai évente</h3>
 
       <label htmlFor="year-select">Válassz évet:</label>
       <select id="year-select" onChange={e => setSelectedYear(e.target.value)} value={selectedYear}>
