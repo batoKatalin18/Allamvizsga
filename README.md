@@ -165,10 +165,12 @@ Allamvizsga/
 ├── README.md
 │
 ├── Backend/
+│   ├── .env                           
 │   ├── requirements.txt
 │   ├── venv/
 │   ├── api/
 │   │   ├── main.py
+│   │   ├── generate_password_hash.py  
 │   │   └── routes/
 │   │       ├── search.py
 │   │       ├── stats_routes.py
@@ -181,6 +183,7 @@ Allamvizsga/
 │   │   └── test2.py
 │   └── pdf_extractor_to_json/
 │       ├── extract_text.py
+│       ├── extract_text2.py          
 │       ├── process_all.py
 │       ├── pdfs/
 │       └── output/
@@ -206,4 +209,10 @@ Allamvizsga/
 │   │       ├── SearchPage.js
 │   │       ├── StatisticsPage.js
 │   │       └── UploadPage.js
+│
+├── jsons/                             
+│   ├── 2013_all_projects.json        
+│   ├── 2014_all_projects.json
+│   ├── ... több év fájlja
+
 ```
