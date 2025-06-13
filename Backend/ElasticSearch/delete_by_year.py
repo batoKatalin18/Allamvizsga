@@ -10,7 +10,7 @@ es = Elasticsearch(
 INDEX_NAME = "tdk_dolgozatok"
 
 # Törlendő év
-year_to_delete = "2000"
+year_to_delete = "2024"
 
 # Ellenőrzés: van-e ilyen dokumentum
 search_result = es.count(index=INDEX_NAME, body={

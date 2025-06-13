@@ -121,7 +121,7 @@
     ]
   },
   {
-    "major": "Kommunikáció és közkapcsolat",
+    "major": "Kommunikáció",
     "year": 2024,
     "title": "Felhasználói élmény a Duolingo alkalmazásban",
     "students": [
@@ -289,7 +289,7 @@
     ]
   },
   {
-    "major": "Egészségtudomány / Védőnő szak",
+    "major": "Közegészségügyi szolgáltatások és politikák",
     "year": 2024,
     "title": "Érzékenyítő jó gyakorlat hatásának mérése egészségügyi és szociális ágazati képzésben résztvevő tanulók körében",
     "students": [
@@ -361,7 +361,7 @@
     ]
   },
   {
-    "major": "Egészségügyi Gondozás és Prevenció",
+    "major": "Közegészségügyi szolgáltatások és politikák",
     "year": 2024,
     "title": "Reziliencia mértékének vizsgálata védőnők körében Magyarországon",
     "students": [
@@ -1501,7 +1501,7 @@
    "generated_keywords": []
 },
 {
-  "major": "Számítástechnika",
+  "major": "Informatika és szoftverfejlesztés",
   "year": 2024,
   "title": "\"MI\" a művész",
   "students": [
@@ -1530,40 +1530,803 @@
     "közösségi média"
   ],
    "generated_keywords": []
-}
+},
+  {
+    "major": "Informatika és szoftverfejlesztés",
+    "year": 2024,
+    "title": "SapiMentor: Egyetemi mentorálást támogató webalkalmazás",
+    "students": [
+      {
+        "name": "Koncz András",
+        "major": "Sapientia EMTE, Marosvásárhelyi Kar, Számítástechnika, 4. év"
+      },
+      {
+        "name": "Szotyori Csongor-Botond",
+        "major": "Sapientia EMTE, Marosvásárhelyi Kar, Számítástechnika, 4. év"
+      }
+    ],
+    "teachers": [
+      {
+        "name": "Dr. Antal Margit",
+        "university": "Sapientia EMTE, Marosvásárhelyi Kar, Matematika-Informatika Tanszék"
+      }
+    ],
+    "content": "Dolgozatunk témája egy olyan webalkalmazás, amely segíti a hallgatók eligazodását és segítségkérését az egyetemi életben. A webalkalmazás mentor-mentorált kapcsolatokra építve nagyban megkönnyítené a hallgatók tanulmányait és az egyetemi életüket. A szocializáció és az információhoz való hozzáférés nagy kihívást jelent napjainkban, különösen az első éves hallgatók számára. Egy olyan weboldal, ahol a hallgatók segítséget kérhetnek vagy nyújthatnak egymásnak, jelentősen hozzájárulhat a szocializációhoz egy új környezetben. Ez pozitív egyetemi élményt nyújthat, különösen, ha ez párosul a tanulmányi eredmények javulásával. Célunk az volt, hogy a felhasználóknak egy olyan felületet biztosítsunk, ahol könnyen kapcsolatba léphetnek azokkal, akik segítséget kérnek vagy nyújtanak. Emellett egy olyan összefoglaló oldalt is kínáltunk, ahol a felhasználók böngészhetnek hasznos linkek, vizsgatételek vagy diplomadolgozatok között, amelyek inspirációt nyújthatnak számukra. Tapasztalataink alapján sok nehézséggel találkoztunk az egyetemi éveink során, és úgy gondoltuk, hogy egy ilyen weboldal segíthetett volna megoldani tanulási és tájékozódási problémáinkat. Fontos kiemelni az oldal mentor-mentorált kapcsolatokat támogató funkcióit is, amelyek segítik a felhasználók közti kommunikációt és könnyebbé teszik a beilleszkedést. Projektünk a Spring Boot keretrendszerre épül. A Java alapú szerveroldalunk REST API kérésekkel kommunikál a kliensoldallal, amelynek fő sajátossága a Thymeleaf sablonmotor implementálása és a JavaScript függvényekkel történő funkcionalitás. Ezeket felhasználva igyekeztünk a lehető legfelhasználóbarátabb felületet létrehozni. Dolgozatunk eredménye egy reszponzív és átlátható webes felület, amely nemcsak könnyen kezelhető, hanem funkcionalitásaival segíti a hallgatókat az egyetemi tanulmányaik során. A SapiMentor elérhetőségi címe: www.sapimentor.eu. Boot. Fuzzy logikával megvalósított városi forgalomirányítás SUMO szimulátorral Mikló József-Péter Sapientia EMTE, Marosvásárhelyi Kar, Automatika és Alkalmazott informatika, 4. év Témavezető: Dr. Dávid László Sapientia EMTE, Marosvásárhelyi Kar, Villamosmérnöki Tanszék Napjainkban nagyon sok jármű közlekedik városokban, illetve autópályákon. Amikor a járművek száma meghaladja az utak kapacitását forgalmi torlódások jönnek létre. Ezen torlódások enyhítésére modern forgalomirányítási rendszerek jelentek meg. A dolgozat célja a forgalmi dugók kialakulásának elkerülése, az utazási idő csökkentése vagy a már kialakult torlódások enyhítése. Többféle megközelítések is születtek az évek során a forgalomirányításra, többek között: mesterséges intelligenciával, Fuzzy logikával, modell prediktív irányítással. A dolgozat során Fuzzy logikás megvalósításra helyeztük a hangsúlyt, különös tekintettel annak szimulációs megvalósítására. A szimulációt egy SUMO (Simulation of Urban MObility) szoftverrel végeztük. Ez egy nyílt forráskódú szimulációs szoftver, amelyet közlekedési hálózatok modellezésére és elemzésére használnak. A TraCI (Traffic Control Interface) egy olyan protokollt biztosít, amely lehetővé teszi, hogy a külső alkalmazások kommunikáljanak a SUMO-val. A TraCI segítségével egy kapcsolatot tudunk létrehozni a SUMO és a Python scriptek között. Első fázisban szakirodalmi kutatást végeztünk, ahol különböző dinamikus matematikai modelleket tanulmányoztunk, amelyek stabilitása meghatározza a torlódások kialakulását. Következő lépésekben pedig egy kereszteződésben próbáltuk megvalósítani a Fuzzy szabályozást. A Fuzzy szabályozás bemenetei a jelzőlámpák előtt kialakult sor hossza (járművek száma) és ezeknek időbeli változása, kimenete pedig meghatározza, hogy melyik útvonal kapjon zöld jelzést és annak idejét. Jövőbeli céljaink pedig több kereszteződés összehangolása, zöld övezetek kialakítása, más technológiákkal való szabályozás megvalósítása és ezek hatékonyságának összehasonlítása.",
+    "keywords": [],
+    "generated_keywords": [
+      "Automatika",
+      "Dávid László Sapientia",
+      "Emellett",
+      "Fuzzy",
+      "Fuzzy logikával"
+    ]
+  },
+  {
+    "major": "Informatika és szoftverfejlesztés",
+    "year": 2024,
+    "title": "BudgetHub: Modern és Intelligens Ingatlankeresés",
+    "students": [
+      {
+        "name": "Gólya Gergő",
+        "major": "Sapientia EMTE, Marosvásárhelyi Kar, Informatika, 3. év"
+      },
+      {
+        "name": "Koncz Hunor",
+        "major": "Sapientia EMTE, Marosvásárhelyi Kar, Informatika, 3. év"
+      }
+    ],
+    "teachers": [
+      {
+        "name": "Dr. Jánosi-Rancz Katalin Tünde",
+        "university": "Sapientia EMTE, Marosvásárhelyi Kar, Matematika-Informatika Tanszék"
+      }
+    ],
+    "content": "Az ingatlanpiac gyorsan változó és egyre inkább szerteágazó piacág, amely az emberek nagy részét közvetlenül vagy közvetett módon érinti. A vásárlási folyamat kihívásokkal teli és időigényes lehet, különösen a számos ingatlanhirdető oldal, platform, irodák és személyek széles kínálatai miatt. A változó árak, az eladásra meghirdetett ingatlanok minőségei és ezek közötti különbségek sokszor megosztják az érdeklődők figyelmét és az erre szánt erőforrásokat. Dolgozatunk célja egy mesterséges intelligencia alapú, ingatlan kereső web-alkalmazás készítése, mely a piacon lévő legújabb és legaktuálisabban elérhető ingatlanokat jeleníti meg felhasználói számára. Mindez egy olyan módszer felhasználásával történik, mely több meglévő online hirdető felületről gyűjti össze és dolgozza fel a szükséges információkat. Emellett innovatív és intelligens megközelítést kínál az ingatlanvásárlás folyamatához. Az alkalmazás segítségével a felhasználók könnyedén és hatékonyan böngészhetnek az ingatlanok között, és az AI-alapú megoldások révén képesek lesznek a számukra legrelevánsabb lehetőségeket azonnal azonosítani és kiemelni a széles kínálatból.",
+    "keywords": [
+      "ingatlan",
+      "web-alkalmazás",
+      "mesterséges intelligencia"
+    ],
+    "generated_keywords": []
+  },
+  {
+    "major": "Informatika és szoftverfejlesztés",
+    "year": 2024,
+    "title": "VolunteerVerse: Önkéntesek és szervezetek koordinációs platformja",
+    "students": [
+      {
+        "name": "Siko Szabolcs",
+        "major": "Sapientia EMTE, Marosvásárhelyi Kar, Informatika, 3. év"
+      },
+      {
+        "name": "Veress Henrietta",
+        "major": "Sapientia EMTE, Marosvásárhelyi Kar, Informatika, 3. év"
+      }
+    ],
+    "teachers": [
+      {
+        "name": "Dr. Jánosi-Rancz Katalin Tünde",
+        "university": "Sapientia EMTE, Marosvásárhelyi Kar, Matematika-Informatika Tanszék"
+      }
+    ],
+    "content": "Az önkéntesség fontos és nemes tevékenység, amely pozitív hatással bír mind az egyén, mind a közösség számára. Napjainkban számos lehetősége van az embereknek önkéntes tevékenységek keresésére, böngészésére a világhálón, viszont az információk sokasága, a rengeteg különböző weboldal és a hosszas, bonyodalmas regisztrációs folyamatok könnyen elbátoríthatják az érdeklődőket. A dolgozat elkészítésének hátterében az a felismerés állt, hogy jelenleg nincs olyan platform, különösen hazánkban, amely megoldást nyújtana a fent említett problémákra. Célunk egy olyan webalkalmazás létrehozása volt, ami elsősorban a magánszemélyek számára tenné egyszerűbbé az önkéntes tevékenységek keresését és az ezeken való részvételt. Fő szempont volt, hogy a felhasználók egyszerűen és gyorsan szervezhessenek vagy csatlakozzanak önkéntes csoportokhoz, anélkül, hogy hivatalos szervezetekhez kellene bekapcsolódniuk vagy bürokratikus akadályokba ütközniük. Emellett, az alkalmazás szervezetek számára is lehetőséget biztosít önkéntesek toborzására eseményeikhez, valamint az eseményeiken belüli feladatok koordinálásához. Az említett önkéntes platform megvalósítására .NET és React technológiákat alkalmaztunk a hatékony adatkezelés, valamint a modern és kellemes felhasználói élmény biztosítása érdekében.",
+    "keywords": [
+      "önkéntesek",
+      "szervezetek",
+      "koordináció",
+      "webalkalmazás"
+    ],
+    "generated_keywords": [
+      ".NET",
+      "React",
+      "felhasználói élmény"
+    ]
+  },
+  {
+    "major": "Informatika és szoftverfejlesztés",
+    "year": 2024,
+    "title": "Kézfej erezet adatgyűjtő rendszer",
+    "students": [
+      {
+        "name": "Vasi András",
+        "major": "Sapientia EMTE, Marosvásárhelyi Kar, Számítástechnika, 4. év"
+      }
+    ],
+    "teachers": [
+      {
+        "name": "Dr. Lefkovits László",
+        "university": "Sapientia EMTE, Marosvásárhelyi Kar, Villamosmérnöki Tanszék"
+      }
+    ],
+    "content": "Testünket átszövik a különböző vénák és artériák, amelyek fontos szerepet töltenek be a keringési rendszerünkben. A vénák szén-dioxid dús vér szállításáért felelősek a tüdőbe, hogy azt oxigénnel telített vérrel töltsék fel. Azok a vénák, amelyek közel vannak a bőrfelszínhez, képesek az infravörös sugarak egy részét elnyelni, míg a körülöttük lévő bőr visszaveri azokat. Ez az egyedi jelenség lehetővé teszi, hogy megfelelő körülmények között a vénák jól látható hálózatokként jelenjenek meg a képeken. Az emberi kézfej vénás erezete egyedi, vagyis biometrikus azonosításra alkalmazható. Megfelelő berendezéssel könnyen hozzáférhető és biztonságosan leolvasható. A tervezett eszközünk első prototípusa egy speciális fényképezőgép szerepét tölti be. Ez a gép infravörös fényforrásokkal és speciális kamerával rendelkezik, melyek segítségével olyan képeket készít, ahol jól láthatóak az egyes vénák erezetei. A Sapientia EMTE Marosvásárhelyi karán, 2023-ban, a kari TDK keretein belül már bemutattuk az eszköz fizikai szerkezetét. Azóta fejlesztettünk hozzá egy felhasználóbarát programot az adatok begyűjtésére. Mostanra a rendszerünk egy teljes termék prototípusává vált, hiszen mind a szoftver, mind a hardver része elkészült. Az eszközünk alkalmas gyors és magas minőségű képi adatbázisok létrehozására, melyek további kutatásokhoz felhasználhatóak. Az elkövetkező kutatások során tervezünk mesterséges intelligenciát is alkalmazni. Célunk, hogy a kép adatbázist a lehető legnagyobb méretűre bővítsük, hogy az későbbi kutatások számára minél hasznosabb legyen. felhasználói felület, szoftver, hardver. Valós hálózatok tanulmányozása az Exodus project keretében Balint Csongor-Tivadar, Béres Tamás, Lörinczi Mátyás Sapientia EMTE, Marosvásárhelyi Kar, Informatika, 3. év Témavezető: Drd. Olteán-Péter Boróka Sapientia EMTE, Marosvásárhelyi Kar, Matematika-Informatika Tanszék Egy szervezeten belül az erőforrások optimális kihasználása létfontosságú a hatékonyság és a siker szempontjából. Azonban napjainkban, amikor a programok szervezése és tervezése időigényes és komplex folyamat, az megszokott Excel táblázatok használata gyakran nem elegendő. Az emberi hiba is közrejátszhat a tervezés sikerességében, ami további problémákat okozhat a projekt menetében és az erőforrások kezelésében. Az Exodus Program Planner projekt célja egy könnyen használható programtervező webalkalmazás létrehozása. Ez az alkalmazás segítséget nyújt az Exodus Tanítványképző Ifjúsági Szolgálat munkatársainak, különösen a vezetőségnek. Az új webalkalmazás célja, hogy egyszerűsítse, vizualizálja és gyorsítsa a tervezési folyamatot, valamint minimalizálja a tévedések lehetőségét. Ezáltal az alkalmazás képes növelni az Exodus szervezet hatékonyságát és javítja ennek belső működését. Az alkalmazás a BushCamp, Host, Csapat és Kurzus entitások könnyű kezelését és frissítését biztosítja, jelentősen leegyszerűsítve ezen területek adminisztrációját. A projekt során számos korszerű technológiát alkalmaztunk. A felhasználói felület elkészítését Angular keretrendszer segítségével írtuk, míg a business logikát és a adatbázissal való kapcsolatot .NET C#-ban készítettük el. Az adatok tárolására és kezelésére PostgreSQL adatbázist használtunk. Jelen dolgozatban az általunk fejlesztett alkalmazás előnyeit és funkcionalitásait szeretnénk bemutatni.",
+    "keywords": [
+      "Exodus",
+      "web-alkalmazás",
+      "programtervezés",
+      "gráf vizualizáció"
+    ],
+    "generated_keywords": [
+      ".NET",
+      "Angular",
+      "BushCamp"
+    ]
+  },
+  {
+    "major": "Informatika és szoftverfejlesztés",
+    "year": 2024,
+    "title": "Mobil alapú szolgáltatás bicikliseknek",
+    "students": [
+      {
+        "name": "Fodor László-Carlos",
+        "major": "Sapientia EMTE, Marosvásárhelyi Kar, Informatika, 3. év"
+      },
+      {
+        "name": "Hegyeli András",
+        "major": "Sapientia EMTE, Marosvásárhelyi Kar, Informatika, 3. év"
+      }
+    ],
+    "teachers": [
+      {
+        "name": "Drd. Olteán-Péter Boróka",
+        "university": "Sapientia EMTE, Marosvásárhelyi Kar, Matematika-Informatika Tanszék"
+      }
+    ],
+    "content": "Napjainkban egyre elterjedtebb és népszerű hobbinak számít a biciklizés. Amellett, hogy a biciklizés egészséges az egyén és a környezet számára, rendkívül fontos közösség-ápoló jellege is van, amely a csoportos tevékenységekben mutatkozik meg. Továbbá, a kikapcsolódás és szocializálódás mellett, egy fontos tényező maga a kerékpár és ennek a megfelelő karbantartása. Ezen szempontok összessége hozzájárul a teljes közösségi élmény kialakításához. A BicyHub alkalmazás célja, hogy egy segítőkész biciklis közösséget hozzon létre, ahol a felhasználóknak lehetőségük van kialakítani baráti, szakmai vagy informatív jellegű kapcsolatokat. Közösségi jellegéből adódóan, az alkalmazás segítséget nyújt úgy kezdők, mint haladók számára, a tapasztalatok és élmények megosztása révén. Emellett lehetőség van a bicikli utak GPS alapú mentésére, az ezekhez kapcsolódó benyomások megosztására, és a közös túrautak szervezésére. Fontos jellemzője a biciklis tevékenységeknek, hogy a kerékpár állapota megfeleljen az ilyen jellegű kihívásoknak, amiben a szervizelés játszik fontos szerepet. A fent említett területeket próbálja lefedni az alkalmazás. Az applikáció lehetőséget ad a felhasználónak arra, hogy szociális kapcsolatokat hozzon létre vagy ápoljon, nyomon kövesse kerékpárjai adatait és előzményeit a felületen, valamint, ha szükség úgy hozza, könnyen technikai segítséget kap a karbantartási, javítási problémákra is. A BicyHub nagy erőssége, hogy az előbb említett igényeket egy helyen szolgálja ki, ami sokat növelhet a biciklizési tapasztalaton. Egy következő fontos szempont az alkalmazás azon tulajdonsága, amely biztosítja a felhasználóknak a biciklik átadását vagy cseréjét. Mivel ezek a tulajdonságok egy helyen találhatóak meg, úgy mint a kommunikáció, véleménynyilvánítás, élménymegosztás, a felhasználók az egymás között kialakított közösség bizalom tapasztalatára támaszkodhatnak, ami egy önellenőrző jelleget teremt. Összességében az alkalmazást egy bicikli szeretők számára kialakított társasági platformnak tekinthetjük, ami széles körűen próbál segítséget adni mindazok számára, akik igényt éreznek a közösség megtartó erejére vagy késztetést tapasztalnak a társaság többi tagja felé történő segítségnyújtásra.",
+    "keywords": [
+      "bicikli",
+      "bicikli-szervíz",
+      "biciklis-közösség",
+      "bicikliutak",
+      "BicyHub"
+    ],
+    "generated_keywords": [
+      "BicyHub",
+      "biciklik"
+    ]
+  },
+  {
+    "major": "Informatika és szoftverfejlesztés",
+    "year": 2024,
+    "title": "Szenzor adatgyűjtő és archiváló alkalmazás a Sapientia EMTE Nemzetközi Fizikai Kutatólabor részére",
+    "students": [
+      {
+        "name": "Nagy Krisztián",
+        "major": "Sapientia EMTE, Marosvásárhelyi Kar, Automatika és Alkalmazott informatika, 4. év"
+      }
+    ],
+    "teachers": [
+      {
+        "name": "Dr. Domokos József",
+        "university": "Sapientia EMTE, Marosvásárhelyi Kar, Villamosmérnöki Tanszék"
+      }
+    ],
+    "content": "A Laravel alapú projektünk egy modern webalkalmazás, melyet a Laravel keretrendszer legfrissebb verziójával fejlesztettünk. Az alkalmazás teljes körű autentikációt biztosít, lehetővé téve a felhasználók számára a bejelentkezést és a jogosultságkezelést. Az adatbázis-kezelés és az adatmanipuláció hatékonyan, egy cloud típusú MongoDB ATLAS platformon történik, segítve az információk gyors és pontos feldolgozását. A kommunikáció kétirányú, lehetővé téve az adatok gyors és megbízható átvitelét az UDP protokoll segítségével. Az alkalmazás támogatja mind az unicast, mind pedig a multicast IP-ket, biztosítva a széleskörű hálózati kapcsolatot. A felhasználók számára grafikus felületet kínálunk, melyben könnyen navigálhatnak és vizualizálhatják a tudományos adatokat és eredményeket. Összességében a projekt erős és megbízható alapokon nyugszik, biztosítva a felhasználóknak a funkcionalitást és teljesítményt. Kulcsszavak: Laravel, autentikáció, adatbázis, valós idejű kommunikáció, UDP, multicast, single cast.",
+    "keywords": [],
+    "generated_keywords": [
+      "Laravel",
+      "MongoDB ATLAS",
+      "UDP"
+    ]
+  },
+  {
+    "major": "Informatika és szoftverfejlesztés",
+    "year": 2024,
+    "title": "Navigációs applikációba integrálható álmosság figyelő rendszer",
+    "students": [
+      {
+        "name": "Veres Tivadar",
+        "major": "Sapientia EMTE, Marosvásárhelyi Kar, Számítástechnika, 4. év"
+      }
+    ],
+    "teachers": [
+      {
+        "name": "Dr. Szántó Zoltán",
+        "university": "Sapientia EMTE, Marosvásárhelyi Kar, Villamosmérnöki Tanszék"
+      }
+    ],
+    "content": "A fáradtság okozta autóbalesetek jelentős hatással vannak mindennapjainkra. A dolgozat célja egy kényelmes és széles körben elérhető megoldás leírása, amely segíti az ilyen balesetek megelőzését. Bár számos módszer létezik a vezetés közbeni fáradtság figyelésére, csak kevesen ismerik vagy alkalmazzák ezeket hatékonyan. Egy a közlekedési cégek körében elterjedtebb megoldás az erre a célra kifejlesztett és forgalmazott berendezés, melyet a gépjárműbe lehet szerelni. Ez a berendezés kamera és/vagy szenzorok segítségével figyeli a vezetőt, és riasztást küld, ha álmosságot érzékel. A dolgozatban egy nem-invazív, kívülről megfigyelő megoldás kerül bemutatásra, amely a felhasználó mobiltelefonjának előlapi kameráját használja képek készítéséhez vezetés közben. Ezeket a képeket felhasználva állapítja meg, hogy fáradt-e az illető a vezetés során vagy sem. Az eddigi megoldásoktól eltérően ez a módszer nem önállóan működne, hanem egy navigációs alkalmazás részeként funkcionálva a háttérben, ezzel elősegítve az elérhetőségét és praktikusságát. A navigációs alkalmazást használók számára lehetőség nyílik arra, hogy ezt a megoldást anélkül használják, hogy további erőfeszítéseket kellene tenniük. A módszer a felhasználók telefonjától érkező képeket dolgozza fel egy szerveren. A szerveren futó algoritmus képfeldolgozást végez, kinyeri az arcot a képről, az arcon meghatározza a szemek-száj arányát, mennyire vannak nyitva, vagy csukva és az arc pozícióját. Ezeket az információkat egyesítve majd osztályozó algoritmus segítségével feldolgozva meghatározhatjuk, hogy a vezető fáradt-e vagy sem. Ha álmosságot észlelünk, a szerver értesíti a telefont, mely riasztást küld a vezetőnek, és javasolja a vezetés abbahagyását. Jelenleg ez a megoldás Random Forest osztályozót használ a National Tsing Hua University DDD adathalmazon, és hatékonyan képes észlelni a vezető fáradtságát.",
+    "keywords": [],
+    "generated_keywords": [
+      "Random Forest"
+    ]
+  },
+  {
+    "major": "Informatika és szoftverfejlesztés",
+    "year": 2024,
+    "title": "LearnIT: Kvízek által támogatott tanulás",
+    "students": [
+      {
+        "name": "Oniga Kriszta",
+        "major": "Sapientia EMTE, Marosvásárhelyi Kar, Informatika, 3. év"
+      },
+      {
+        "name": "Demeter Evelin Delinke",
+        "major": "Sapientia EMTE, Marosvásárhelyi Kar, Informatika, 3. év"
+      }
+    ],
+    "teachers": [
+      {
+        "name": "Drd. Osztián Pálma Rozália",
+        "university": "Sapientia EMTE, Marosvásárhelyi Kar, Matematika-Informatika Tanszék"
+      }
+    ],
+    "content": "Napjainkban egyre szélesebb körben elterjedt a mobileszközök használata, ez maga után vonva számos változást az oktatás terén is. Egyre nagyobb odafigyelést igényel a digitalizáció által kínált lehetőségek hasznos célra való fordítása, főleg azok számára akik most kezdik a tanulmányi vagy szakmai pályafutásukat. A digitalizált tanulási módszerek alkalmazása az oktatásban kiemelkedő fontosságú a jelenlegi generáció számára, mivel mára már megszokottá vált az a tudat, hogy okostelefonjaink bármilyen problémában segítségünkre vannak. Továbbá, a felmérés egy olyan alapvető tanítási eszköz, amely által rálátást kaphatunk a résztvevők tanulmányi fejlődésére azáltal, hogy az új információkat gyakorlatias módszerekkel szemléltetjük. A LearnIT alkalmazás egy egyedi lehetőséget biztosít a különféle tartalmak részletes és gyakorlatias megközelítésére. Az alkalmazás fő célja a programozással kapcsolatos fogalmak hatékony tanítása és elsajátítása, játékos megközelítést és változatos módszereket alkalmazva. Ezek között kiemelkedő szerepet kapnak az interaktív kvízek, melyek lehetővé teszik az érdeklődők számára, hogy aktívan részt vegyenek a tanulási folyamatban, mi- közben szórakoztató és barátságos környezetben fejlesztik a programozással kapcsolatos képességeiket. Dolgozatunkban a fejlesztett mobilalkalmazás hatékonyságának vizsgálatát tűztük ki célul, kiemelt figyelmet fordítva a különböző kérdéstípusokra adott válaszokra. Az alkalmazás a Sapientia informatika és műszaki tudományokon résztvevő hallgatóinak tanulmányi előrehaladását hivatott elősegíteni. Az elmúlt időszakban két alapvető tantárgy keretén belül követtük a tanulók második féléves teljesítményét.",
+    "keywords": [
+      "tanítás",
+      "kvíz",
+      "tanulás",
+      "teljesítmény",
+      "kérdéstípusok",
+      "mobilalkalmazás"
+    ],
+    "generated_keywords": [
+      "LearnIT",
+      "Sapientia"
+    ]
+  },
+  {
+    "major": "Informatika és szoftverfejlesztés",
+    "year": 2024,
+    "title": "EcoChamp",
+    "students": [
+      {
+        "name": "Portik Szabolcs",
+        "major": "Sapientia EMTE, Marosvásárhelyi Kar, Számítástechnika, 3. év"
+      },
+      {
+        "name": "Szabó Ákos",
+        "major": "Sapientia EMTE, Marosvásárhelyi Kar, Számítástechnika, 3. év"
+      },
+      {
+        "name": "Zsigmond Attila",
+        "major": "Sapientia EMTE, Marosvásárhelyi Kar, Számítástechnika, 3. év"
+      }
+    ],
+    "teachers": [
+      {
+        "name": "Dr. Szántó Zoltán",
+        "university": "Sapientia EMTE, Marosvásárhelyi Kar, Villamosmérnöki Tanszék"
+      }
+    ],
+    "content": "A mai világban a hulladékkezelés és különösen az újrahasznosítás kulcsfontosságú téma. Érdekes statisztika: naponta 1.3 milliárd palackot használunk fel, ami percenként egymilliót jelent. Hatból egy halálesetet a környezetszennyezés okoz, és ezek a számok napról napra romlanak. Tudomásunk szerint sokan szeretnének környezettudatosabbak lenni, de gyakran nem tudják, hogyan kezdjenek hozzá, vagy nem érzik elég motiválónak a folyamatot. Ezért hoztuk létre az EcoChamp projektet. Első lépésben a Romániában nemrég megjelent palack garancia vonalán szerettünk volna elindulni. Mint köztudott, minden palack után fizetünk 50 banit, amit visszakapunk, amikor leadjuk a gyűjtőpontnál a palackot. Jelenleg a pénzt csak az adott helyen vásárolhatjuk le, ahol beváltottuk a palackot, ezt szeretnénk megváltoztatni. A mi megoldásunk egy univerzálisan levásárolható, digitális kupon lenne, ami megkönnyíti a felhasználók dolgát a palackok leadása után. Emellett alkalmazásunk fontos alapköve a gyűjtőpontok közötti keresés, hogy egyszerűen megtalálhassuk a legközelebbit. Az emberek motiválására hozzáadtunk újrahasznosító ranglistát, illetve mérföldköveket is. A hozzánk csatlakozó partnerek az akciók által akár visszatérő vásárlókat is egyszerűen tudnak szerezni. A gyűjtött pontokból a felhasználók vásárolhatnak partnerek által biztosított kedvezmény-kuponokat, egy-egy adott termékre, így tudnák magukhoz csalogatni a felhasználókat. A weboldalon lehetőséget szeretnénk biztosítani a partnercégeknek különböző reklámok megjelenítésére is, ezáltal is növelve a profitjukat.",
+    "keywords": [],
+    "generated_keywords": [
+      "EcoChamp"
+    ]
+  },
+  {
+    "major": "Informatika és szoftverfejlesztés",
+    "year": 2024,
+    "title": "FlowMaster: hatékony munkafolyamatok elősegítése",
+    "students": [
+      {
+        "name": "Kéri Csaba",
+        "major": "Sapientia EMTE, Marosvásárhelyi Kar, Informatika, 3. év"
+      },
+      {
+        "name": "Kiss Bence",
+        "major": "Sapientia EMTE, Marosvásárhelyi Kar, Informatika, 3. év"
+      }
+    ],
+    "teachers": [
+      {
+        "name": "Dr. Jánosi-Rancz Katalin Tünde",
+        "university": "Sapientia EMTE, Marosvásárhelyi Kar, Matematika-Informatika Tanszék"
+      }
+    ],
+    "content": "Napjainkban a projektmenedzsment és együttműködéssel kapcsolatos alkalmazások a hatékony és szervezett munkavégzés elengedhetetlen eszközeivé váltak. A mindennapi munka során a csapatmunka, az egymással való kommunikáció és együttműködés további kritikus szemponttá alakultak. Ezekre alapozva az alkalmazások lehetővé teszik a csapatok számára, hogy teljes körű rálátással rendelkezzenek a projektjeik felett, beleértve a feladatokat, határidőket és prioritásokat, valamint a könnyed információáramlást a csapatok tagjai között. Ezen alkalmazásokat főként az intuitív felhasználói élmény, a vizualitás, valamint a hasznos információ kihangsúlyozása jellemzi, melyek ötvözésének köszönhetően létfontosságúvá váltak úgy a szoftverfejlesztés, mint más szakterületeken is. Dolgozatunk célja egy Kanban metodológiára alapuló projektmenedzselő alkalmazás bemutatása, fókuszálva ennek előnyeire és a való életben mért hasznosságára. Az alkalmazás fő célja a munkafolyamatok vizuális követése Kanban táblák segítségével, melyek nagymértékben elősegítik a felhasználók strukturált és produktív munkavégzését. Alkalmazásunk fő egységeit a felhasználók projektjei képezik, melyek megjelenítésére a feladatközpontúság jellemző. A feladatok különböző csoportokba rendezve jelennek meg állapotuk szerint, melyek a munkafolyamat haladásának mértékével állnak összhangban.",
+    "keywords": [
+      "Kanban",
+      "vizualitás",
+      "projektmenedzsment",
+      "csapatmunka"
+    ],
+    "generated_keywords": [
+      "Kanban",
+      "felhasználói élmény"
+    ]
+  },
+  {
+    "major": "Informatika és szoftverfejlesztés",
+    "year": 2024,
+    "title": "Cronotus - Sportesemény koordináló webalkalmazás",
+    "students": [
+      {
+        "name": "Ábrám Szilveszter Levente",
+        "major": "Sapientia EMTE, Marosvásárhelyi Kar, Informatika, 3. év"
+      }
+    ],
+    "teachers": [
+      {
+        "name": "Dr. Jánosi-Rancz Katalin Tünde",
+        "university": "Sapientia EMTE, Marosvásárhelyi Kar, Matematika-Informatika Tanszék"
+      }
+    ],
+    "content": "A mozgás és a különböző sportok űzése szerves részét képezik az emberek mindennapi életének. Ahhoz, hogy egészségesen élhessünk, mindannyian más és más sportokat választunk, melyekbe naponta energiát és időt fektetünk. A mozgás nem csak fizikai, de szellemi egészségünkre is nagy hatással van, továbbá az, hogy kikkel sportolunk, nagymértékben meghatározza a mozgással eltöltött időnk minőségét. Mindenki számára fontos a közösség, úgy a magánéletben, mint a sportolásban is. A legnagyobb kihívást sokszor az jelenti, hogy megtaláljuk az ideális társaságot és a közösen eltöltött idő valóban minőségi legyen. Dolgozatom célja, egy olyan alkalmazás bemutatása, amely a sportolásra ösztönöz mindenkit és segít a sportolói közösség kialakításában is. A Cronotus egy olyan internetes felületet biztosít, ahol az emberek könnyedén kiküszöbölhetik a sportoláshoz szükséges társaság hiányában felmerülő problémát. Lehetőséget biztosít sportesemények szervezésére, illetve ezek böngészésére, hogy biztosak lehessünk abban, hogy többé senki nem marad otthon azért, mert nem volt, akivel sportolni menjen. A projekt továbbá szem előtt tartja azt is, hogy egyes események könnyedén követhetőek legyenek, lehetőséget biztosít a szervezőknek arra, hogy naprakész információkkal lássák el a sportolókat, továbbá egy visszajelzéseken alapuló rendszert is kínál, ami segíthet a közösségnek abban, hogy a számukra legmegfelelőbb eseményeket találják meg.",
+    "keywords": [
+      "sport",
+      "sportesemény",
+      "szervezés",
+      "koordinálás",
+      "közösség"
+    ],
+    "generated_keywords": [
+      "Cronotus"
+    ]
+  },
+    {
+    "major": "Kommunikáció",
+    "year": 2024,
+    "title": "Érintőképernyős és okoseszközök használata",
+    "students": [
+      {
+        "name": "Karácsony Barbara",
+        "major": "Sapientia EMTE, Marosvásárhelyi Kar, Kommunikáció és közkapcsolatok szak, 3. év"
+      }
+    ],
+    "teachers": [
+      {
+        "name": "Dr. Tőkés Gyöngyvér-Erika",
+        "university": "Sapientia EMTE, Marosvásárhelyi Kar, Alkalmazott Társadalomtudományok Tanszék"
+      }
+    ],
+    "content": "A digitális technológia túlsúlyos használatának kérdése a fiatalabb korosztályt jelentősen érinti. Számomra mindig zavaró volt a felnőttek pánikolását észlelni, ezért gondoltam, hogy fontos a tinédzserek érintőképernyős okoseszköz használatának a vizsgálata. A fiatalok a társas életüket ma már inkább az internet világában élik, aminek megvannak az előnyei és hátrányai. Ugyanakkor, nem mindenki engedheti meg magának az érintőképernyős okoseszközöket, ennek pedig számos oka lehet, ilyen pl. a lakóhely sajátosságai, az anyagi körülmények, a szülők hozzáállása az internet és okoseszközök világához, a szülők iskolai végzettsége és a baráti körökben jelenlévő adottságok. Tehát, foglalkoznunk kell a mai tinédzserek érintőképernyős okoseszköz használatával, hogy ráláthassunk a fiatalok mindennapjaira az online világban. Dolgozatomban a nyárádszeredai Bocskai István Líceum elméleti és szakiskolai osztályaiban tanuló diákoknak az érintőképernyős okoseszköz használatát, valamint internetes tevékenységeik sajátosságait kutatom. Ugyanakkor, követem az elméleti és szakosztályok diákjai között fennálló különbséget is, a vizsgálati szempontok szerint. Feltételezéseim szerint különbség van az elméleti és szakiskolai osztályokban tanuló diákok között, ugyanis eltérő családi háttérrel rendelkeznek és a szülők iskolai végzettsége tekintetében is rétegzettség jellemző. A kutatási adatgyűjtés online kérdőív segítségével történik, amelynek feldolgozásával keresem a választ a diákok okoseszköz használati és internetezési sajátosságaira.",
+    "keywords": [],
+    "generated_keywords": [
+    ]
+  },
+  {
+    "major": "Kommunikáció",
+    "year": 2024,
+    "title": "Digitális eszközhasználati szokások, a körtvélyfájai „baby boomer” generáció körében",
+    "students": [
+      {
+        "name": "Biró Helga-Antónia",
+        "major": "Sapientia EMTE, Marosvásárhelyi Kar, Kommunikáció és közkapcsolatok szak, 3. év"
+      }
+    ],
+    "teachers": [
+      {
+        "name": "Dr. Vajda András",
+        "university": "Sapientia EMTE, Marosvásárhelyi Kar, Alkalmazott Társadalomtudományok Tanszék"
+      }
+    ],
+    "content": "A digitális technológia elterjedése, jelentős változásokat hozott az emberek mindennapi életébe, így az idős generációk mindennapjaiban is. Kiemelt problémát képez ez az európai országok öregedő társadalmaiban, ha az idős emberek digitális gyakorlatait és az információs társadalomhoz való felzárkóztatását vesszük figyelembe. Szakdolgozatomban egy Románia középső régiójában, Maros megyében található, többségében magyarok lakta vidéki településének, Körtvélyfája idős – “baby boomer” – generációjának digitális eszközhasználatát és internethasználati szokásait elemzem. Azt vizsgálom, hogy milyen szerepe van a digitális technológiának és eszközöknek az idős generáció életében? Milyen helyzetekben, milyen okból kifolyólag használják a digitális technológiát, illetve milyen eszközöket és milyen felületeteket használnak? Azaz a digitális technológia és mindennapi összefüggéseit, a technológiának a háztartások keretei között zajló elsajátításának, domesztikációjának folyamatát vizsgálom egy konkrét település esetében. Az elméleti részben, olyan, a kutatásom szempontjából fontos témákat tekintek át, melyek egyrészt a digitális technológia elterjedésének társadalmi hatását érintik (ide tartozik az információs forradalom, a digitalizáció, a technológiai determinizmus és a technológia naturalizációjának/domesztikációjának kérdése), másrészt a vizsgált korcsoport, az öregek szociológiai és kulturális jellemzőivel (öregkor és öregedés), harmadrészt az idősek által használt médiafelületek és kommunikációs csatornák, az online platformok és a közösségi média természetét érintik. A dolgozat második része empirikus, kvalitatív adatokra alapozott elemzés, mely a vizsgált településen élő idősek digitális eszközhasználatát és digitális műveltségük jellemző vonásait mutatja be. A kutatás során arra is figyeltem, hogy a megfigyelésre kiválasztott résztvevők között férfiak és nők, illetve különböző anyagi és szociális háttérrel rendelkező személyek szerepeljenek. A mélyinterjúk során olyan témák kerültek előtérbe, mint a digitális eszközök használatának gyakorisága, az internethasználat, valamint az ezzel kapcsolatos preferenciák és tapasztalatok, illetve a használat során felmerülő akadályok és azok leküzdése. A kutatás a digitális eszközök használata és az idős emberek életminősége közötti összefüggéseket is igyekszik feltárni, beleértve a szociális kapcsolatok erősödését és az információhoz való könnyebb hozzáférést. Az elemzés azt igazolja, hogy az idősek a digitális eszközöket legfőképp személyközi kapcsolattartásra, információkeresésre és szórakozásra használják, azonban – tekintettel arra, hogy a “baby boomer” generáció digitális műveltségi szintje alacsony – ez egy résztudáson alapuló, korlátozott használatot jelent.",
+    "keywords": [],
+    "generated_keywords": [
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+      "Maros",
+      "Románia"
+    ]
+  },
+  {
+    "major": "Kommunikáció",
+    "year": 2024,
+    "title": "Online vs Offline vásárlási szokások Nyárádremetén",
+    "students": [
+      {
+        "name": "Szántó Sarolta",
+        "major": "Sapientia EMTE, Marosvásárhelyi Kar, Kommunikáció és közkapcsolatok szak, 3. év"
+      }
+    ],
+    "teachers": [
+      {
+        "name": "Dr. Fülöp Otília",
+        "university": "Sapientia EMTE, Marosvásárhelyi Kar, Alkalmazott Társadalomtudományok Tanszék"
+      }
+    ],
+    "content": "Az online vásárlás térhódítása és az ezzel járó digitális környezetben történő vásárlás gyakoriságának növekedése olyan változásokat hozott a vásárlói viselkedésben, melyeket alaposan meg kell vizsgálni és megérteni, miközben figyelembe kell venni az offline vásárlás jelentőségét és hatását is. A modern technológia fejlődése, valamint az internet elterjedése új lehetőségeket teremtett a vásárlók számára, hogy kényelmesen és gyorsan beszerezzenek különféle termékeket és szolgáltatásokat. Az online vásárlás kényelmi és időmegtakarítási előnyei mellett azonban nem szabad figyelmen kívül hagynunk az offline vásárlás személyes élményét és az ezzel járó élményeket, amelyek továbbra is vonzóak lehetnek számos vásárló számára. Dolgozatom elméleti részében részletesen körüljárom a vásárlói típusokat és szokásokat, hogy megértsem, mi motiválja az embereket az online vagy offline vásárlásra. Ebben a kontextusban vizsgálom az online vásárlás kényelmét és gyorsaságát, valamint az offline vásárlás személyes interakciót és élményt nyújtó jellegét. Különös figyelmet szentelek annak, hogyan befolyásolja mindez a vásárlói döntéseket és viselkedést. A gyakorlati részben interjúkat és kérdőíveket használok a helyi lakosok körében annak érdekében, hogy első kézből megismerjem a vásárlók preferenciáit és szokásait. Felteszek olyan kérdéseket, mint például mely vásárlási módot részesítik előnyben, milyen tényezők befolyásolják vásárlási döntéseiket, és hogyan változtatta meg vásárlási szokásaikat az online tér. Célom, hogy átfogó képet kapjak arról, hogyan változtatta meg a modern technológia elterjedése és az új lehetőségek megjelenése a vásárlói szokásokat Nyárádremetén. fogyasztói preferenciák, vásárlói típusok, vásárlói élmény. Ember–gép kommunikáció. A ChatGPT és használatai Miklos Evelyn-Renáta Sapientia EMTE, Marosvásárhelyi Kar, Kommunikáció és közkapcsolatok szak, 3. év Témavezető: Dr. Fülöp Otília Sapientia EMTE, Marosvásárhelyi Kar, Alkalmazott Társadalomtudományok Tanszék Dolgozatom a mesterséges intelligencia chatbotjának, a ChatGPT-nek a mai percepcióját vizsgálja. Utánajárok annak, hogy mit tudunk ma a ChatGPT képességeiről, előnyeiről, hátrányairól és a különböző területekre való hatásáról. A dolgozatomban kiderül, hogy miért tett ekkora érdeklődésre szert ez a chatbot. A hangsúly azon lesz, hogy mi az emberek, leginkább újságírók percepciója a mesterséges intelligenciával kapcsolatban, illetve mennyire hat a munkájukra. Erre a módszerem az (online) adatelemzés, tartalomelemzés lesz, ennek segítségével újságírók cikkekbe formált véleményét fogom elemezni a mesterséges intelligencia programmal kapcsolatban. Úgy vélem, hogy az eredmény egyoldalú lesz abból a szempontból, hogy a chatbot hatással van rájuk és igenis befolyásolja a munkájukat. Valószínűsíthető, hogy a kiszámíthatatlan következmények felerősítik a logikus, magyarázó hangnemmel szemben az érzelmeket előtérbe helyező beszédmódot.",
+    "keywords": [],
+    "generated_keywords": [
+      "ChatGPT"
+    ]
+  },
+  {
+    "major": "Kommunikáció",
+    "year": 2024,
+    "title": "A fesztiválok online kommunikációja",
+    "students": [
+      {
+        "name": "Szabó Ágnes",
+        "major": "Sapientia EMTE, Marosvásárhelyi Kar, Kommunikáció és közkapcsolatok szak, 3. év"
+      }
+    ],
+    "teachers": [
+      {
+        "name": "Dr. Tőkés Gyöngyvér-Erika",
+        "university": "Sapientia EMTE, Marosvásárhelyi Kar, Alkalmazott Társadalomtudományok Tanszék"
+      }
+    ],
+    "content": "A rendezvények és különösen a fesztiválok online kommunikációja egyre nagyobb teret hódít meg világszerte. A dolgozat célja a Vibe és az Untold zenei fesztiválok online kommunikációjának elemzése és összehasonlítása, annak érdekében erősségeiket és gyengeségeiket feltárjuk. A dolgozat az alábbi összetétellel rendelkezik: Az I. részben a bevezetésre kerül sor, amely röviden ismerteti az olvasót a témával és feltárja a dolgozat célját. A II. részben az elméleti háttér részletes tárgyalására kerül sor, a rendezvények, fesztiválok és különösen a zenei fesztiválok fogalmait tárgyaljuk, illetve a kolozsvári Untold és a marosvásárhelyi Vibe zenei fesztiválok történeti hátterét tekintjük át. A III. részben az online kommunikációs formákra fektetem a hangsúlyt, itt összegzem a Web 1.0 és Web 2.0 alap tudnivalóit és a fesztiválok kommunikációs szakaszait, a fesztivál előtt, alatt, és után. A IV. részben a kutatás módszertanán belül a közösségi média, a honlapok és alkalmazások szerepe olvasható az online kommunikáció esetében. Különös figyelmet szentelve olyan platformokra, mint a Facebook, Instagram, és a YouTube, az Untold és a Vibe honlapjai, valamint letölthető alkalmazásai. A V. részben foglalom össze a végső eredményeket és a kutatásom által létrejött következtetéseimet. A dolgozat összességében rávilágít arra, hogy a zenei fesztiválok online megjelenítése jelentős változást hozott az élményszerzési szektorban. A zenei fesztiválok sikerességének és az élmények biztosításához elengedhetetlen a digitális kommunikációs eszközök hatékony felhasználása és alkalmazása. fesztivál, online kommunikáció, közösségi média, weboldal, applikáció. A flipped classroom használata az egyetemi oktatásban Barabás Botond Sapientia EMTE, Marosvásárhelyi Kar, Kommunikáció és közkapcsolatok szak, 3. év Témavezető: Dr. Fülöp Otília Sapientia EMTE, Marosvásárhelyi Kar, Alkalmazott Társadalomtudományok Tanszék A hagyományos oktatási módszerek elavultsága jelentősen érinti a fiatalabb generációkat. Mindig is érdekelt, hogy milyen módszer alkalmazásával lehetne javítani az oktatás eredményességén és élményén. Foglalkoznunk kell egy olyan oktatási módszer kialakításával, amely segítségével növekedni fognak a diákok eredményei és ambíciójuk. Egyetemi éveim során szerencsém volt találkozni egy modern oktatási módszerrel, a flipped classroommal. A módszer röviden azt jelenti, hogy a közvetlen oktatás helyét átveszik a videók, amelyeket órák előtt kell megnézni, ami azt eredményezi, hogy a diákok egyéni időt kapnak tanáraikkal és velük együtt tudnak dolgozni. Dolgozatomban a Sapientia Erdélyi Magyar Tudományegyetem Kommunikáció és közkapcsolatok szak első- és harmadéves hallgatóinak Online kompetenciák, illetve Kritikai gondolkodás tárgyak gyakorlati óráin alkalmazott flipped classroom módszerről lesz szó. A dolgozatomból kiderül, hogy mennyire volt hatékony a módszer. Feltételezéseim szerint a flipped classroom módszer hatásosabb a hagyományos oktatási módszernél. A kutatási adatgyűjtés online kérdőív segítségével történik, ennek kiértékelésével keresem a választ a módszer hatékonyságára.",
+    "keywords": [],
+    "generated_keywords": [
+      "Facebook"
+    ]
+  },
+  {
+    "major": "Kommunikáció",
+    "year": 2024,
+    "title": "A Counter Strike: Global Offensive hatása a szociális kapcsolatokra",
+    "students": [
+      {
+        "name": "Szép Martin",
+        "major": "Sapientia EMTE, Marosvásárhelyi Kar, Kommunikáció és közkapcsolatok szak, 3. év"
+      }
+    ],
+    "teachers": [
+      {
+        "name": "Dr. Vajda András",
+        "university": "Sapientia EMTE, Marosvásárhelyi Kar, Alkalmazott Társadalomtudományok Tanszék"
+      }
+    ],
+    "content": "A gyorsan fejlődő technológiának köszönhetően egyre élménydúsabb és szórakoztatóbb játékokat hoznak létre a fejlesztők, amik egyre nagyobb hatást gyakorolnak a felhasználók szociális kapcsolatainak alakulására, illetve énképének és identitásának fejlődésére. Különösen igaz ez a Counter Strike: Global Offensive (CS: GO) nevű játék esetében, hiszen naponta akár 1 millió, különböző szociokulturális környezetből érkező felhasználó is aktívan bekapcsolódik a játékba. Kutatásom során azt fogom vizsgálni, hogy a CS: GO hogyan befolyásolja a felhasználók kommunikációs gyakorlatait és készségeit, miként alakítja énképének és identitásának fejlődését, egyszóval miként épül be a játék – és ezen keresztül a médiatechnológia – a felhasználók mindennapjaiba. Célom feltárni azt, hogy a játék és az ezt közvetítő média mely tulajdonságai vannak leginkább hatással a játékosokra. Az elemzéshez empirikus és kvalitatív módszert használok. Az elemzés olyan 18–24 éves fiatalokkal készített interjúkra támaszkodik, akik elérhetőek a Reddit, illetve Steam platformokon kimondottan CS: GO számára létrehozott online csoportokban. A tanulmány eredményei segíthetnek megérteni a CS: GO pozitív és negatív hatásait a felhasználók szocializációjában, valamint énképének és identitásának kialakulásában.",
+    "keywords": [
+      "médiaelsajátítás",
+      "online játék",
+      "identitás",
+      "szocializáció",
+      "online kommunikáció"
+    ],
+    "generated_keywords": [
+      "CS",
+      "CS: GO",
+      "Reddit",
+      "Steam"
+    ]
+  },
+  {
+    "major": "Kommunikáció",
+    "year": 2024,
+    "title": "Showműsorok forgatókönyvének elemzése. Az X Faktor esete",
+    "students": [
+      {
+        "name": "Piros Nóra",
+        "major": "Sapientia EMTE, Marosvásárhelyi Kar, Kommunikáció és közkapcsolatok szak, 3. év"
+      }
+    ],
+    "teachers": [
+      {
+        "name": "Dr. Kovács Barna",
+        "university": "Sapientia EMTE, Marosvásárhelyi Kar, Alkalmazott Társadalomtudományok Tanszék"
+      }
+    ],
+    "content": "Kutatásom során a showműsorok forgatókönyvének a szerkezeti felépítését vizsgálom. Feltevésem szerint e műsoroknak van egy forgatókönyve, ami pontosan előírja, hogyan történjen a szórakoztatás, milyen fordulatok legyenek, annak érdekében, hogy felkeltsék és fenntartsák a nézők figyelmét. Ezek az elemek nincsenek a nézők számára feltárva, azonban végigkövetve bizonyos szempontokat, ezek kimutathatóak lesznek. A tehetségkutatók esetében több részletre is kell figyelni, annak érdekében, hogy a műsor sikeres lehessen. Elméleti hátteremben ezeket vizsgálom, vagyis, hogy milyen szerkezeti elemeket használ egy ilyen műsor, annak érdekében, hogy fokozza a nézők érdeklődését. Melyek azok az elemek, amelyek a forgatókönyv elemeiként visszaköszönnek? Kutatásom gyakorlati részében az X Faktor három évadát tartalomelemzés segítségével vizsgálom, amelyre egy saját szempontrendszert alakítok ki. Azért választottam az X Faktort, mivel ez éri el a legtöbb korosztályt, valamint az egyik legsikeresebb showműsornak tekinthető. 2010 óta, két év kihagyással minden évben képernyőre került, és bár a 2023-as évben új műsor került adásba helyette, 2024-ben mégis ismét képernyőre kerül. Tehát úgy gondolom, hogy ez a műsor a legalkalmasabb arra, hogy olyan elemeket vizsgáljak, amelyek a forgatókönyv sikerességét kívánják garantálni.",
+    "keywords": [],
+    "generated_keywords": [
+      "X Faktor"
+    ]
+  },
+  {
+    "major": "Kommunikáció",
+    "year": 2024,
+    "title": "Az Instagram szerepe a fiatalok kapcsolattartásában",
+    "students": [
+      {
+        "name": "Muzsnai Edina Borbála",
+        "major": "Sapientia EMTE, Marosvásárhelyi Kar, Kommunikáció és közkapcsolatok szak, 3. év"
+      }
+    ],
+    "teachers": [
+      {
+        "name": "Dr. Tőkés Gyöngyvér-Erika",
+        "university": "Sapientia EMTE, Marosvásárhelyi Kar, Alkalmazott Társadalomtudományok Tanszék"
+      }
+    ],
+    "content": "Szakdolgozatom témája az Instagram szerepének vizsgálata a fiatalok kapcsolattartásában. Számomra nagyon érdekes ez a témakör, mivel napjainkban teljesen behálózott minket az internet, kiváltképp a közösségi média, pl. az Instagram, és ezáltal emberi kapcsolatainkat is ott építjük. Egyre kevesebb időt töltünk barátaink, szeretteink, ismerőseink körében, helyette inkább az online térben vagyunk jelen. Személyközi kapcsolataink ellaposodnak, mára már csak az üzengetések maradnak. Dolgozatom célja megértetni a fiatalokkal, hogy akarva vagy akaratlanul, az Instagram az életük részévé vált és egyre inkább átvette a hatalmat az emberi kapcsolattartásukban is. Kutatásomban a 18-25 év közötti erdélyi magyar fiatalok lesznek segítségemre. Azért választottam ezt a korosztályt, mivel ők azok, akik a leginkább használják az Instagramot a személyes kapcsolataik fenntartására. A célcsoportból kiválasztok 20 személyt, akikkel interjút fogok készíteni. Az interjúk mellett, mind a 20 személynek a figyelni fogom az Instagram profilját egy adott ideig, jegyezni fogom, hogy ki mennyit, mikor és milyen típusú tartalmakat oszt meg. Az interjúkban olyan témakörökre fogok kitérni mintpéldául: az alanyok személyes kommunikációja az Instagramon, az alkalmazás használatának gyakorisága, tartalomgyártás, konfliktusok az Instagramon. A várt kutatási eredményeket, azaz az interjúk tartalmát elemzem, majd összesítem és ebből fogok levonni következtetéseket. Megpróbálok a legmegfelelőbb választ kapni a kérdésemre, vagyis arra, hogy milyen szerepe van az Instagramnak a mai 18-25 év közötti fiatalok kapcsolattartásában.",
+    "keywords": [],
+    "generated_keywords": [
+      "Instagram"
+    ]
+  },
+  {
+    "major": "Kommunikáció",
+    "year": 2024,
+    "title": "Hátrányos helyzetű szülők mobil- és internethasználata",
+    "students": [
+      {
+        "name": "Mátyus Anita-Gabriella",
+        "major": "Sapientia EMTE, Marosvásárhelyi Kar, Kommunikáció és közkapcsolatok szak, 3. év"
+      }
+    ],
+    "teachers": [
+      {
+        "name": "Dr. Vajda András",
+        "university": "Sapientia EMTE, Marosvásárhelyi Kar, Alkalmazott Társadalomtudományok Tanszék"
+      }
+    ],
+    "content": "Dolgozatomban a vidéki környezetből érkező hátrányos helyzetű szülők mobil- és internethasználatát fogom vizsgálni, azt, hogy az alanyok milyen élethelyzetekben, milyen gyakorisággal és milyen funkcióval használják a mobiltelefont, az internetet, illetve bizonyos közösségi média oldalakat. A dolgozat a kommunikációs helyzeteknek és a médiumokhoz kapcsolódó cselekvéseknek, a médiatechnológiák elsajátításának a mindennapokban (a családban és az iskolában) betöltött szerepének empirikus vizsgálatára fókuszál, a mindennapi élet és a technológia, illetve a médiumrendszerek közötti összefüggéseit próbálja feltárni. Azért esett a választásom erre a szociokulturális csoportra, mert meglátásom szerint ők azok, akiknek – miközben korlátozott anyagi lehetőségük van ezeknek a technológiáknak a megvásárlására és nehézségeket okoz a médiatechnológia elsajátítása, egyre gyakrabban kényszerülnek arra, hogy használják azt, azaz rávilágít arra, hogy a média és a technológia miként hálózza be a különböző csoportok életvilágát és változtatja meg a szocializáció és a mindennapi élet teljes feltételrendszerét. A kutatás a Magyarfülpösi Szórványkollégiumba járó diákok szüleinek média- és technológiahasználati gyakorlatára irányul, az adatgyűjtést a kollégium diákjainak és szüleiknek a közreműködésével végeztem. Módszertani szempontból az interjút használtam. hátrányos helyzetűek, digitális kompetenciák. A közösségi média hatása az otthon végzett testmozgásra Barabási Mária-Magdolna Sapientia EMTE, Marosvásárhelyi Kar, Kommunikáció és közkapcsolatok szak, 3. év Témavezető: Dr. Vajda András Sapientia EMTE, Marosvásárhelyi Kar, Alkalmazott Társadalomtudományok Tanszék A szabadidő átértelmezése óta a kommunikációs technológiák fejlődésének és a mindennapi élet minden területére kiterjedő mediatizációnak következtében egyre nagyobb teret hódítanak az otthonról végzett sportolás különböző formái, a különböző online edzésformákat népszerűsítő és segítő (útmutatást nyújtó) tartalmak. Számos személyi edző kezdte el az online térben is hirdetni, népszerűsíteni edzői tevékenységét. Az online közvetített torna, azaz egy-egy személyi edzőnek a közösségi médiában közzétett videóanyaga alapján végzett otthoni testmozgás a Covid-19 járvány időszaka alatt nagy népszerűségre tett szert, de a járvány lecsengését követően is népszerűek maradtak ezek a tartalmak, a sportolás ezen formái. Tanulmányomban a szabadidőben végzett mozgás mibenlétének és helyszínének átértelmezését, az internet befolyásoló hatását és az online torna egy típusát, a közösségi médiában megosztott videók segítségével otthonról végzett jógagyakorlatokat, valamint ezek az egyén életében betöltött szerepét és társadalmi hatását vizsgálom. Azt elemzem, hogy a közösségi média miként támogatja az otthoni testmozgás végzését, milyen formában valósul meg az edző és a gyakorlatokat végző személyek interakciója, milyen kommunikációs csatornákat használnak, illetve miként szerveződnek az online folytatott torna köré online közösségek és ezek milyen témákról és miként kommunikálnak, illetve milyen fogyasztói hatással rendelkezik. Dolgozatomban az online tornát sajátos mozgáskultúraként és szabadidős tevékenységként értelmezem. Hipotézisem az, hogy a közösségi felületeken való megosztott élő és rögzített jóga gyakorlatokat magába foglaló órák pozitív hatást gyakorolnak a testmozgásra vágyó egyének számára. Kulcsfogalmak: mediatizáció, a technológia naturalizációja, online közvetített torna, közösségi média, edző-sportoló közti kommunikáció, testkultúra, mozgáskultúra, online coaching.",
+    "keywords": [],
+    "generated_keywords": [
+      "Covid-19",
+      "Kommunikáció",
+      "Magyarfülpösi Szórványkollégiumba"
+    ]
+  },
+  {
+    "major": "Kommunikáció",
+    "year": 2024,
+    "title": "E-könyvek és p-könyvek olvasása közötti különbségek",
+    "students": [
+      {
+        "name": "Dorottya Demeter",
+        "major": "Sapientia EMTE, Marosvásárhelyi Kar, Kommunikáció és közkapcsolatok szak, 3. év"
+      }
+    ],
+    "teachers": [
+      {
+        "name": "Dr. Kovács Barna",
+        "university": "Sapientia EMTE, Marosvásárhelyi Kar, Alkalmazott Társadalomtudományok Tanszék"
+      }
+    ],
+    "content": "A kutatás fő célja az elektronikus (e-könyvek) és hagyományos könyvek (p-könyvek) olvasási élményének és hatékonyságának összehasonlítása a Sapientia EMTE marosvásárhelyi karán tanuló egyetemisták körében, különös figyelemmel a szövegértésre és a szemfáradtságra. Az elemzés alapját a résztvevők szubjektív észrevételei és véleményei képezik. A szakirodalmi áttekintés részletesen bemutatja az e-könyvek és papíralapú könyvek közötti különbségeket, beleértve azokat a fejlődéseket is, amelyek az e-könyv olvasási technológiák megjelenése óta történtek. A kutatás két fő részből áll: egy helyzetfelmérő és egy kísérleti részből. A helyzetfelmérő részben több egyetemistát vontam be, akiket kérdőív segítségével vizsgáltam meg, hogy feltérképezzem az aktuális olvasási szokásaikat a Sapientia EMTE Marosvásárhelyi Karán. Ezen túlmenően, lehetőséget biztosítottam számukra, hogy részt vegyenek a kísérletben. A kísérleti részt úgy alakítottam ki, hogy a résztvevőknek négy különböző szöveget kellett elolvasniuk, melyeket két részletben kaptak meg. A szövegeket digitális és nyomtatott formátumban is rendelkezésükre állítottam, és minden nap csak egy részt olvashattak el, így összesen nyolc napra volt szükségük a feladat teljesítéséhez. Az eredmények elemzése során arra összpontosítok, hogy mely olvasási formátumok támogatják hatékonyabban a szövegértést, minimalizálják a szemfáradtságot és javítják az olvasási élményt az egyetemisták körében. A kutatás célja nem csupán az olvasási formátumok közötti különbségek feltárása, hanem segítség nyújtása az oktatási módszerek fejlesztésében és a diákok tanulási környezetének javításában azáltal, hogy alkalmazkodik az olvasási preferenciákhoz és a technológiai változásokhoz.",
+    "keywords": [],
+    "generated_keywords": [
+      "Sapientia"
+    ]
+  },
+  {
+    "major": "Kommunikáció",
+    "year": 2024,
+    "title": "A közösségi média hatása az emberek testképére és önértékelésére",
+    "students": [
+      {
+        "name": "Kristofoletti Carla-Maria",
+        "major": "Sapientia EMTE, Marosvásárhelyi Kar, Kommunikáció és közkapcsolatok szak, 3. év"
+      }
+    ],
+    "teachers": [
+      {
+        "name": "Dr. Vajda András",
+        "university": "Sapientia EMTE, Marosvásárhelyi Kar, Alkalmazott Társadalomtudományok Tanszék"
+      }
+    ],
+    "content": "A digitális kor és a közösségi média megváltoztatta az emberek életmódjait, önképét, testképüket és önértékelését. A folyamatos online jelenlét és a közösségi média által közvetített normák és értékrendek számos téren kihívások elé állítják az embereket, így van ez a testkép, a testünkhöz való viszonyulás és az önértékelés területén is. A fiatalabb generációk körében különösen jelentős ez a hatás, a közösségi médiában forgalmazott testideáloknak a saját testi adottságokkal történő összehasonlítása miatt gyakran éreznek szorongást, elégedetlenséget, mely gyakran alacsony önbecsüléshez vezet. Kutatásom célja, hogy feltárjam azokat a hatásokat, melyeket a közösségi média gyakorol az erdélyi magyar anyanyelvű fiatalok saját testéről alkotott elképzeléseire és ennek folytán önképére. Azt vizsgálom meg, hogy milyen (test)ideálok jellemzőek a közösségi médiában, ezek milyen helyzetekben kerülnek összehasonlításra a saját testképpel és ezek hogyan befolyásolják a fiatalok saját testükhöz való viszonyulását? Dolgozatomban Segesváron elő fiatalokkal és a Sapientia EMTE diákaival készített interjúk segítségével azt tanulmányozom, hogy a közösségi média hogyan befolyásolja a fiatalok testükhöz – és általában a testhez való viszonyát. Dolgozatomban arra is kitérek, hogy miként lehet a testképzavarokat kezelésni az online térben, és ebben milyen szerepe van a testpozitivitást népszerűsítő hírességeknek és influencereknek. A kutatás tehát a body positivity mozgalomra is kiterjed, azt is megvizsgálja, hogy a közösségi média hogyan támogathatja az önelfogadást. Szomaesztétika. A stand-up mint az emberi kapcsolataink tükre és mint tanulási lehetőség Tofalvi Andrea Sapientia EMTE, Marosvásárhelyi Kar, Kommunikáció és közkapcsolatok szak, 3. év Témavezető: Dr. Fülöp Otília Sapientia EMTE, Marosvásárhelyi Kar, Alkalmazott Társadalomtudományok Tanszék Amikor nevetünk, felszabadulunk, nem csak a „gőzt” engedjük ki (lásd a humor szelep funkciója), hanem leengedünk az agyunkban bizonyos korlátokat, így az információ könnyen eljuthat hozzánk, vagyis lerövidül a tanulási folyamat. Egy stand-up előadásban bemutatásra kerülnek (az antropológiai leíró módszerrel, csak viccesen) emberi kapcsolataink, és humorosan, azaz mintegy görbe tükörben, tanulhatunk nemcsak önmagunkról, de egymásról is. Ezt a tudást beépítve mindennapjainkba, képesek leszünk jobban megérteni egymást. A dolgozat célja ezt a jelenséget bemutatni és megvizsgálni. Ennek kutatásához Kovács András Péter Életed filmje című önálló estjét választottam ki. A dolgozat első részében ismertetem az olvasóval a témát, a stand-up fogalmi hátterét, társadalmi jelenségét, kialakulási történetét. A második részben a módszertan bemutatás a után az est tartalomelemzésére kerül sor. Mivel, amint a neve is mutatja, az est az emberi élet szakaszairól szól, és a tartalomelemzésben bemutatom, és elemzés alá vetem ezeket a szakaszokat, kiemelve főbb pontjait és tanulságait. A dolgozat végeredményben rámutat a stand-up humor általi tanító és tükör aspektusára, arra, hogy segítségével szórakozva megérthetjük a világot és egymást. Az elemzéshez a szempontrendszerembe belefoglaltam például a proxemikát, a gesztikulációt, arcjátékot, hanghordozást. empátia, tanulás. A mesterséges intelligencia és az emberi munkavégzés érzékeny kapcsolata Szabo Lajos-Dániel Sapientia EMTE, Marosvásárhelyi Kar, Kommunikáció és közkapcsolatok szak, 2. év Témavezető: Dr. Fülöp Otília Sapientia EMTE, Marosvásárhelyi Kar, Alkalmazott Társadalomtudományok Tanszék A dolgozat témája a mesterséges intelligencia hatása az emberi tevékenységekre, kiemelten a munkavégezésre nézve. Azzal mindannyian egyetértünk, hogy az MI technológiája az elmúlt években soha nem látott fejlődésen ment keresztül, és az is világos, hogy ennek a folyamatnak még koránt sincs vége. Az MI már alkalmas arra, hogy emberi felügyelet mellett elvégezzen olyan munkálatokat, amelyeknek a véghezvitele korábban kizárólag humán erőforrás használatával lett volna lehetséges. Ugyanakkor ma még nem kell attól tartanunk, hogy a mesterséges intelligencia munkanélkülivé tenne bennünket, hiszen képességei még erősen korlátoltak, de nem szabad eltekintenünk attól az ijesztő ténytől, hogy az MI ma jóval többet tud, mint tegnap tudott és a holnapi napon sokkal többet fog tudni, mint ma, miközben ugyanez az emberi elme esetében nem mondható el. Ezen tényezőkből eredeztethetőek a jelen dolgozat kutatási kérdései, amelyek a következőek: Képes lehet arra az MI technológiája, hogy jelentős változásokat eredményezzen a munkaerőpiacokon és az emberi munkavégzés jellegében? Kell-e attól tartanunk, hogy az MI munkanélküliséget fog eredményezni? Milyen etikai aggályok merülhetnek fel az MI munkahelyeken történő felhasználása során? Eljöhet-e az emberiség történetében az a pont, ahol a mesterséges intelligenciával ellátott gépek képesek lennének az emberek összes munkáját és erőfeszítéseket igénylő tevékenységeiket ellátni? Ha ez bekövetkezne, akkor az milyen hatásokat gyakorolna az emberi életvitelre és életszínvonalra nézve? A dolgozat kérdéseinek megválaszolásának érdekében számos kutatást és tudományos publikációt tekintek át, illetve interjúkat készítek a 2023-as, JubileuMI | MI a jövő? című PontKom konferencia előadóival. Tartalomelemzéssel, narratív értelmezéssel vizsgálom a mesterséges intelligencia következményeit feltáró egyik művészi alkotást, a Wall-E című animációs rajzfilmet, amely a 81. Oscar díjátadón elnyerte a Legjobb Animációs Film kategóriáért járó Oscar-díjat Andrew Stanton rendezésében. A dolgozat releváns információkkal szolgál a mesterséges intelligencia következményei előrevetítéséhez. Úgy gondolom, hogy ha a jelenlegi tudásunk összegzésével próbát teszünk a jövő tudományos módszerekkel való megismerésére nem csak a magunk, hanem az egész társadalom számára is előnyt teremthetünk a jövőben való boldogulás tekintetében.",
+    "keywords": [],
+    "generated_keywords": [
+    ]
+  },
+  {
+    "major": "Kommunikáció",
+    "year": 2024,
+    "title": "A „Barbenheimer jelenség” sikeres kommunikációjának vizsgálata",
+    "students": [
+      {
+        "name": "Éltes Erik-Krisztián",
+        "major": "Sapientia EMTE, Marosvásárhelyi Kar, Kommunikáció és közkapcsolatok szak, 3. év"
+      }
+    ],
+    "teachers": [
+      {
+        "name": "Dr. Kovács Barna",
+        "university": "Sapientia EMTE, Marosvásárhelyi Kar, Alkalmazott Társadalomtudományok Tanszék"
+      }
+    ],
+    "content": "Christopher Nolan: Oppenheimer című életrajzi filmje és Greta Gerwig: Barbie című vígjátéka a 2023 nyarának legnépszerűbb filmjei lettek az anyagi bevételek adatait tekintve. Julius Robert Oppenheimer elméleti fizikus életéről szóló film közel egymilliárd amerikai dollárt, míg a Mattel amerikai játékokat gyártó cég közismert játékbabájának fiktív története több, mint másfél milliárd dollár nyereséget szereztek. Emellett a különböző közösségi médiafelületeken az említett kasszasikerek hónapokon át fennmaradtak a nyilvános közbeszédben a róluk készült digitális mémek virális terjedésének és a rivalizáló hangvételt kiváltó gerillamarketingnek köszönhetően. A szakdolgozatom célja, hogy az Oppenheimer és Barbie című filmek anyagi bevételének sikerét megfejtsem. A következő kérdésekre keresem a válaszokat: Mely reklámozási eszközök bizonyultak sikeresnek a Barbie és az Oppenheimer című filmek promoválásának időszakában? Milyen hatást gyakoroltak a filmek reklámjai a közösségi média felületek fogyasztóira, illetve a felhasználók, milyen fajta mémek segítségével járultak hozzá a két film közös reklámozásához? A kérdéseim megválaszolásához megfogom vizsgálni, hogy a különböző közösségi felületeken (Facebook, Instagram, Twitter, új nevén X) az alkotók és a filmekre várakozó közösségi média fogyasztók milyen eszközök igénybevételével reklámozták a filmeket, milyen reakciókat váltottak ki a fogyasztókból a reklámok, valamint hogyan született meg a két film címének összeolvadása a Barbenheimer. A módszertant a tartalomelemzés képezi. A Barbenheimer jelenség vizsgálata során a két film előzeteseit elemzem; kitérek a közösségi média felületek tartalomgyártói által készült, az említett filmek tartalmával kapcsolatos mémek elemzésére, amely videó és képi formátumban is elterjedtek virálisan. filmmarketing, gerillamarketing, filmmarketing, digitális mémek, virális terjedés. Képernyő apparátus mivolta és konstruáló ereje Szász Andrea Sapientia EMTE, Marosvásárhelyi Kar, Kommunikáció és közkapcsolatok szak, 3. év Témavezető: Dr. Fülöp Otília Sapientia EMTE, Marosvásárhelyi Kar, Alkalmazott Társadalomtudományok Tanszék Az információs korszak kezdete óta a technológia fejlődése drasztikusan átformálta mindennapi életünket, amelyben a képernyők és digitális eszközök szinte elengedhetetlenek. Bár folyamatosan változnak és fejlődnek az eszközök, az emberek mindig újabb és jobb technológiák felé törekszenek. Dolgozatban a képernyőmánia fogalmát, képernyők használatát és hatásait vizsgálom, és rámutatok a lehetséges fejlődési irányokra és változásokra a közeljövőben, amelyeket gyakran a sci-fi filmek és sorozatok inspirálnak. Bevezetésben szó kerül a témáról, a dolgozat során feltett hipotézisekre és kérdésekre. Megfogalmazásra kerül a képernyőmánia fogalma, meghatározása és a világbeli funkciója. Emellett szó lesz a képernyőarcheológiáról, ami által visszatekintést nyerünk, hogy mi volt a legelső képernyő, kijelző (technológia), majd ezt követően megemlítem és magyarázom a legforradalmibb technológiákat, mint például az érintőképernyőt. Ezt követően a legnépszerűbb képernyőkre is példa kerül, és a képernyők hatásairól is szó esik, ahol beszámolok az erősségeiről és veszélyeiről. Végül pedig a jövőkérdésére is kitérek, milyen jövőbeli technológiákra lehetne számítani. Jövő.",
+    "keywords": [
+      "képernyő",
+      "képernyőmánia",
+      "kijelző",
+      "technológia",
+      "fejlődés",
+      "hatás"
+    ],
+    "generated_keywords": [
+      "Barbenheimer",
+      "Barbie",
+      "Christopher Nolan"
+    ]
+  },
+    {
+    "major": "Neveléstudomány",
+    "year": 2024,
+    "title": "Mi mindent tudhat egy oktatási platform?",
+    "students": [
+      {
+        "name": "Máté Noémi",
+        "major": "Sapientia EMTE, Marosvásárhelyi Kar, Informatika szak, 3. év"
+      }
+    ],
+    "teachers": [
+      {
+        "name": "Csaholczi Szabolcs",
+        "university": "Sapientia EMTE, Marosvásárhelyi Kar, Matematika-Informatika Tanszék"
+      }
+    ],
+    "content": "Napjainkban azzal kell szembesülnünk, hogy a pedagógusok számára egyre nagyobb kihívást jelentenek az oktatás mindennapjai. Egy olyan világban, ahol egy kattintásra képek és videók, információk ezrei tárulnak a diákok elé, a tanítás folyamatának megtervezése és megszervezése folyamatos megmérettetést jelent, hiszen így a táblára felírt pszeudokód, a füzetbe lediktált történelemlecke, az atlaszban az Európa térkép még inkább unalmassá válik. A jelenség feloldásához olyan módszerre, eszközre van szükség, amely nemcsak felkelti, hanem fenn is tartja a tanulók érdeklődését az adott óra tananyagának kapcsán. Kutatásom során egy olyan webalkalmazást fejlesztettem ki, amely képek, animációk és hangok segítségével színessé és interaktívvá teszi a tanulás folyamatát, ezáltal elősegíti a pedagógus munkáját a tanítás és értékelés során. A kutatás célcsoportját az 5-8-as tanulók képezik, a feladatok létrehozása során az informatikaoktatást állítom középpontba, ám arra is rámutatok, hogy az eszköz bármilyen más tantárgy tanítása esetén is jól alkalmazható, pl. történelem, földrajz. A webapplikáció használata során a tanár felhasználók saját kurzusokat hoznak létre tananyaggal és feladatsorokkal, amelyek feleletválasztós és “fogd és vidd” típusú feladatokból állnak. Az alkalmazás egy kiemelkedő pontja, amikor a megoldott feladat kiértékelésénél színekkel és hangokkal való jelzések segítik a figyelem fenntartását, az anyagban való előrehaladást, az eredményeket szemléletes diagramok ábrázolják.",
+    "keywords": [],
+    "generated_keywords": [
+      "Európa"
+    ]
+  },
+  {
+    "major": "Neveléstudomány",
+    "year": 2024,
+    "title": "nyárádszeredai bocskai istván iskolaközpontban",
+    "students": [
+      {
+        "name": "Kovács Norbert",
+        "major": "Sapientia EMTE, Marosvásárhelyi Kar, Informatika szak, Posztgraduális tanárképzés"
+      }
+    ],
+    "teachers": [
+      {
+        "name": "Dr. Kátai Zoltán",
+        "university": "Sapientia EMTE, Marosvásárhelyi Kar, Matematika-Informatika Tanszék"
+      }
+    ],
+    "content": "Az egész társadalomban igaz, hogy az oktatási rendszerek egyik központi célja, hogy a K-12 iskolai évek révén (óvodától tizenkettedik osztályig) felkészítsék a diákokat a felsőoktatásra. Ennek fontosságát hangsúlyozzák, például, azok a felmérések, amelyek úgy következtetnek, hogy a főiskolai végzettség magasabb foglalkoztatási arányokat és jövedelmezőbb állásokat eredményez. Másfelől, általánosságban megfigyelhető, hogy a városokban tanuló diákok sokkal valószínűbben tanulnak tovább, mint azok, akik vidéki iskolákban végeztek. Ennek egyik lehetséges oka, több kutatás is erre enged következtetni, hogy a vidéki iskolák diákjai felkészültségi szintje általában alul marad az „urbanizált társaikéhoz” képest. Erre a jelenségre még rátevődik a nemek közötti különbség is, főleg STEM (science, technology, engineering, mathematics) területen. Egy Amerikai Egyesült Államokban készült felmérés szerint, bár a lediplomázottak többsége nő volt (57%), STEM területen ez az arány csak 35% volt. A fentebb közvonalazott jelenség fókuszba helyezi a STEM oktatás fontosságát a K-12 oktatás keretében, és kiemeli az időszerűségét a vidéki iskolákban zajló oktatás vizsgálatának a nemek perspektívájából. Dolgozatom e kutatási irány mellé zárkózik fel azzal, hogy a nyárádszeredai Bocskai István iskolaközpontban zajló matematikaioktatás keretében, a játékosítási (gamification) lehetőségeket vizsgálja, nemekre levetítve. A gamifikáció egyre nagyobb teret hódít az oktatásban. Célja javítani a tanítási-tanulási folyamat minőségén például azáltal, hogy növeli a tanulási élményt és a tanulói elégedettséget. Jelen tanulmány keretében azt vizsgálom, hogy a középiskolás fiúk és lányok miként viszonyulnak a matematika órákon felbukkanó játékosított oktatási elemekre.",
+    "keywords": [],
+    "generated_keywords": [
+      "K-12",
+      "STEM",
+      "játékosított oktatás"
+    ]
+  },
+  {
+    "major": "Neveléstudomány",
+    "year": 2024,
+    "title": "KnowledgeBridge – Az érettségire való felkészülés fontossága",
+    "students": [
+      {
+        "name": "Schifler Patricia-Vivien",
+        "major": "Sapientia EMTE, Marosvásárhelyi Kar, Informatika szak, 3. év"
+      },
+      {
+        "name": "Kovács Bálint-Hunor",
+        "major": "Sapientia EMTE, Marosvásárhelyi Kar, Informatika szak, 3. év"
+      }
+    ],
+    "teachers": [
+      {
+        "name": "Dr. Kátai Zoltán",
+        "university": "Sapientia EMTE, Marosvásárhelyi Kar, Matematika-Informatika Tanszék"
+      }
+    ],
+    "content": "A dolgozat célja egy olyan alkalmazás bemutatása, amely elsődlegesen középiskolás diákok tanulását hivatott megkönnyíteni. Köztudott, hogy az érettségi az egyik legnehezebb mozzanata egy diák életének. Ezt nehezíti, hogy sok esetben a megfelelő információkat nehezen kezelhető, olykor elavult állami oldalakon találhatják meg. Ezen probléma megoldására jött létre a KnowledgeBridge platform, mely nem csak a dokumentumok, hasznos anyagok és segédletek összegyűjtését könnyíti meg, de lehetőséget biztosít a tananyaggal kapcsolatos kérdések megvitatására, ami egy mélyebb megértést és az új nézőpontból való szemlélést szorgalmazza. Mivel a célcsoport a romániai magyar középiskolás diákok közössége, így kiemelkedően fontos az, hogy elősegítse az új kapcsolatok kialakulását, az anyanyelven való kommunikáció ösztönzését, a tanulás és tanítás minőségének javítását és egységesítését. Emellett a platform célja, hogy elősegítse, hogy a diákok ne csak tanuljanak egymástól, de tanítsák is egymást, erősítve a közösségbe való tartozást, az énképet és a személyes fejlődést. Továbbá a diákok nem csak egymástól, hanem más pedagógusoktól is tanulhatnak, így a diák- és tanárközösségek közötti kapcsolatteremtésnek is kiemelkedő szerepe van. Ez nem csak a személyre szabott tananyagok és segédletek megosztásában, de a közvetlen visszajelzés általi fejlődésben is releváns. Ennélfogva, nem csak az oda-vissza történő kommunikációt, de a motivációt és az oktatás minőségét is javítja. A platform hatékonyságának érdekében egy felmérést végeztünk romániai magyar középiskolás diákok egy csoportján. Ezen kutatás arra hivatott rávilágítani, hogy mennyire fontos, hogy kisebbségként megfelelő segítséget kapjunk a tanuláshoz. Továbbá, hogy a platform kellőképpen elősegíti-e az elvárt közösség kialakulását, ezáltal eredményesebbé téve a tudásátadást. Összegezve, a KnowledgeBridge nem csupán egy tananyag összegyűjtő platform, hanem egy olyan közösségi tér, ahol a romániai magyar diákok és tanárok tudás- és tapasztalatátadás mellett egy biztonságos teret alakítanak ki az életre való felkészülés érdekében.",
+    "keywords": [],
+    "generated_keywords": [
+      "KnowledgeBridge",
+      "diákok",
+      "kapcsolatok kialakulását"
+    ]
+  },
+  {
+    "major": "Neveléstudomány",
+    "year": 2024,
+    "title": "Blokkalapú programozási környezetek az informatikatanítás bevezetésében",
+    "students": [
+      {
+        "name": "Szeibert Xavér",
+        "major": "Sapientia EMTE, Marosvásárhelyi Kar, Posztgraduális tanárképzés"
+      }
+    ],
+    "teachers": [
+      {
+        "name": "Dr. Harangus Katalin",
+        "university": "Sapientia EMTE, Marosvásárhelyi Kar, Tanárképző Intézet"
+      }
+    ],
+    "content": "Napjainkban az informatika átszövi a hétköznapokat, a munka és szórakozás világát. Életünk minden területén jelen van, és akarva akaratlanul alkalmazzuk. Ezért nagyon fontos, hogy már fiatalon elsajátítsuk az informatika azon logikai alapjait, amelyek nem csak egy program megírásához szükségesek, hanem a logikai döntéshozatal kialakításában és fejlesztésében is döntő szerepet játszanak. Dolgozatomban olyan blokk alapú programozási környezeteket mutatok be, amelyek bevezetése az informatika oktatásába egy hatékony eszközt biztosít a logikai gondolkodás fejlesztésére. A színes grafikai elemek hatására nő a diákok érdeklődése, motiváltabbak lesznek a tanulásban, valamint nagyobb figyelmet fordítanak a feladatok elvégzésére.",
+    "keywords": [],
+    "generated_keywords": [
+      "diákok érdeklődése"
+    ]
+  },
+  {
+    "major": "Neveléstudomány",
+    "year": 2024,
+    "title": "Marosvásárhely körzetében élő pedagógusok és szülők partnerkapcsolata",
+    "students": [
+      {
+        "name": "Aszalos Szilvia-Erzsébet",
+        "major": "Sapientia EMTE, Marosvásárhelyi Kar, Posztgraduális tanárképzés, 2. év"
+      }
+    ],
+    "teachers": [
+      {
+        "name": "Dr. Szentes Erzsébet",
+        "university": "Sapientia EMTE, Marosvásárhelyi Kar, Tanárképző Intézet"
+      }
+    ],
+    "content": "Románia határain belül 6.6%-os kisebbségben élünk magyar nemzetiségűek, azonban a 2021-es népszámlálási adatok alapján Marosvásárhely körzetének mintegy 42.84%-át magyar lakosság képezi. Dolgozatomban ennek a magyar közösségnek bizonyos szegmenseit vizsgáltam lakókörnyezetemben, azzal a céllal, hogy aktuális képet kapjak a pedagógusok és szülők együttműködéséről, különös tekintettel lévén az elvált szülők esetére. A kutatási téma fontosságát alátámasztja, hogy a gyerekek fejlődését az elsődleges szocializációs színtér (család) és a másodlagos szocializációs színtér (iskola) befolyásolja a legjelentősebb mértékben (Petruș, 2006). Annak érdekében, hogy a diákok kedvező körülmények között tanulhassanak, a pedagógusok és a szülők partnerkapcsolatot kell, hogy ápoljanak egymással (Lannert és Szekszárdi, 2015). Felderítő-feltáró kutatásomban Google Forms digitális kérdőívek segítségével vizsgáltam a célközönséget 3 szakaszban: 2022-ben a pedagógusokat, 2023-ban a szülőket és 2024-ben a diákokat. A felmérésben résztvevő személyekhez hólabda módszerű mintavétellel jutottam el, ezért okkal feltételezhető, hogy a minta több tagja ismeri egymást. A kutatás előtt felállított hipotéziseimet nagyvonalakban igazolták a beérkezett válaszok, amelyek feldolgozására Excel adatbázist készítettem, majd statisztikai próbák által ellenőriztem az előfeltevések igaz mivoltát. Sikerült alátámasztani a mintára vonatkozóan, hogy az édesanyák szülői bevonódása jelentősebb mértékű, ellenben az édesapák kevésbé együttműködőek a gyerekeik pedagógusaival. Sajnos az is beigazolódott, hogy a pedagógusok nem fordítanak elég figyelmet az elvált szülőkre, hiszen nincsenek erre kiképezve. A megkérdezett felek egyöntetűen úgy vélik, hogy kellő nyitottsággal és rendszeres kommunikációval gördülékeny együttműködés alakulhat ki szülő és pedagógus között. A diákok válaszaiból pedig arra következtethetünk, hogy a bizalmi kapcsolat is akkor a legszilárdabb a pedagógus-tanuló, illetve szülő-gyerek között, ha a két felnőtt fél egyenrangú partnerként tiszteli egymást. A felmérésemből kiderül, hogy Marosvásárhely magyar kisebbségében nem olyan gyakori az elvált szülők esete, mint azt a nemzetközi kutatások mutatják. Ugyanakkor a pedagógus-szülő partnersége pozitív hatással van a diákok magatartására és fejlődésére egyaránt.",
+    "keywords": [],
+    "generated_keywords": [
+      "Excel",
+      "Google Forms",
+      "Lannert",
+      "Marosvásárhely"
+    ]
+  },
+  {
+    "major": "Neveléstudomány",
+    "year": 2024,
+    "title": "Veszélyes lehet az internet? A médiatudatosság fejlesztésének fontossága",
+    "students": [
+      {
+        "name": "Kis Gerlinda-Boglárka",
+        "major": "Sapientia EMTE, Marosvásárhelyi Kar, Posztgraduális tanárképzés"
+      }
+    ],
+    "teachers": [
+      {
+        "name": "Dr. Harangus Katalin",
+        "university": "Sapientia EMTE, Marosvásárhelyi Kar, Tanárképző Intézet"
+      }
+    ],
+    "content": "Az internet alapú tanulás jelentős előrelépést hozott az oktatás terén, ugyanakkor számos veszélyforrást is rejt magában. Kutatásomban az általános iskolás diákok körében vizsgálom az internet használatának gyakoriságát, illetve azt, hogy mennyire ismerik a virtuális világ veszélyeit, negatív hátrányait. Az adatok azt mutatják, hogy a diákok egy része kevésbé használja tudatosan az interneten elérhető információkat. Nincsenek tisztában a kibertámadás és az online zaklatás veszélyeivel, nem ismerik fel az álhíreken keresztül terjesztett hamis információk kockázatait, valamint hiányosságok mutatkoztak a személyes adatok védelme terén is. Az eredmények alátámasztják, hogy az oktatás során nagyobb hangsúlyt kell helyezni a médiatudatosságra való nevelésre. A diákoknak ismerniük kell az internet használatának a veszélyeit, következményeit ahhoz, hogy tanulásuk hatékony legyen. Kulcsszavak : Internet, általános iskola, adatbiztonság, oktatás, informatika. Virtuális valóság az oktatásban Gál Károly-István Sapientia EMTE, Marosvásárhelyi Kar, mechatronikai rendszerek, Mesteri Szak, 2. év Témavezető: Dr. Pásztor Judit, Dr. Forgó Zoltán, Dr. Egyed-Faluvégi Erzsébet Sapientia EMTE, Marosvásárhelyi kar. Gépészmérnöki tanszék A virtuális világ napjaink legdinamikusabban fejlődő területe. A minket körülvevő, az adatok, információk, ingerek millióit ránk szabadító virtuális környezet a gyerekeket hozzászoktatja a mindig új, mindig érdekes, vizuálisan vonzó formában megjelenő tartalmakhoz, és erre az oktatásnak is reagálnia kell. Olyan technikai eszközöket és módszertani megoldásokat kell integrálni az oktatási folyamatba, amelyek képesek megragadni és fenntartani a tanulók érdeklődését (Komló Csaba, 2020). A VR eszközök elterjedésének köszönhetően, a felhasználók egyre szélesebb köre nyer hozzáférést a virtuális világhoz. Ez megjelenik az oktatásban, szórakoztatásban, iparban, kereskedelemben is. A legtöbb kutató egyetért abban, hogy a virtuális valóság forradalmasíthatja az oktatást. A dolgozatban összevetjük a VR, AR technológiák alapvető fogalmait, és ismertetjük ezek egyik eszközét, az EON XR platformot. Dolgozatunkban bemutatásra kerül több olyan az EON-XR platform felületén létrehozott tartalom amelyeket fellehet használni az oktatásban, valamint a gyártási folyamatok optimalizálásában, továbbá szó lesz a számos akadályról amelyekbe beleütköztünk tartalom gyártás közben. Ugyebár a mai fiatalok számára egyszerű a modern eszközök használata, mivel ők ezen eszközökkel körbevéve nőttek fel, ugyanakkor ez a mai tanárokra nem igaz mivel, nekik nehéz az új modern eszközökkel dolgozni, új tartalmakat elkészíteni, dolgozatunkban erről is beszélni fogunk.",
+    "keywords": [],
+    "generated_keywords": [
+      "AR",
+      "EON-XR"
+    ]
+  },
+  {
+    "major": "Neveléstudomány",
+    "year": 2024,
+    "title": "A művészettudományok oktatásának korszerű megközelítése",
+    "students": [
+      {
+        "name": "Derzsi Dániel",
+        "major": "Sapientia EMTE, Marosvásárhelyi Kar, Szoftverfejlesztés, Mesteri szak, 2. év"
+      }
+    ],
+    "teachers": [
+      {
+        "name": "Dr. Harangus Katalin",
+        "university": "Sapientia EMTE, Marosvásárhelyi Kar, Tanárképző Intézet"
+      }
+    ],
+    "content": "A művészettudományok tanítása a romániai középiskolákban már évtizedek óta rögzített folyamatokból áll. Szükségessé vált a művészetek tanításának újragondolása, új, innovatív megközelítésekkel élve a művészeti oktatás keretein belül. Ahogyan a társadalom fejlődik, úgy kell fejlődnie a tudás átadásának és a kreativitás ösztönzésének is a művészi kifejezés területén. A Bolyai Farkas Elméleti Líceum keretén belül került kidolgozásra egy új, hibrid megközelítése a művészetek oktatásának. A mindennapi rajzórák mellett kihasználja az online kollaboratív platformok által nyújtott kényelmet, kiragadva a rajzoktatást az osztályterem négy fala közül a mindennapokba. Tanulmányomban új stratégiákat és pedagógiai technikákat javaslok, amelyek célja a tanulók elkötelezettségének és készségfejlesztésének hatékonyabb fokozása. Megvizsgálom, hogy mennyire befolyásolja a diákok viselkedését, produktivitását és eredményességét az a tény, hogy bárhol és bármikor részt vehetnek a tanulási folyamatban. A diákok mellett a pedagógusokra gyakorolt hatását is vizsgálom.",
+    "keywords": [
+      "művészettudományok",
+      "online oktatás",
+      "kollaboratív tanulás",
+      "e-learning"
+    ],
+    "generated_keywords": [
+      "diákok viselkedését"
+    ]
+  },
+  {
+    "major": "Neveléstudomány",
+    "year": 2024,
+    "title": "Gamifikáció és Életminőség: Egy Mobilalkalmazásban Rejlő Potenciál Vizsgálata",
+    "students": [
+      {
+        "name": "Nagy Szabolcs",
+        "major": "Sapientia EMTE, Marosvásárhelyi Kar, Informatika szak, 3. év"
+      }
+    ],
+    "teachers": [
+      {
+        "name": "Dr. Kátai Zoltán",
+        "university": "Sapientia EMTE, Marosvásárhelyi Kar, Matematika - Informatika Tanszék"
+      }
+    ],
+    "content": "A gamifikáció a játékmechanizmusok erejét használja fel annak érdekében, hogy különféle tevékenységekre motiválja az embereket. Alkalmazása kiterjedhet az élet szinte minden területére, például készségfejlesztésre és viselkedésmódosításra is, ami végül az életminőség javítását eredményezheti. A gamifikáció nem csupán a technológia integrálását jelenti a meglévő modellekbe, hanem teljesen új megközelítéseket teremt, elérve közösségeket, és inspirálva egyéneket olyan célok felé, amelyekre korábban talán nem fordítottak kellő figyelmet. Az utóbbi években rengeteg gamifikált megoldás jelent meg, mégis ez a hatalmas érdeklődés gyakran túlzott várakozásokhoz vezet. A technológiai szektor gyakran tapasztalja, hogy a túlzott hype előzi meg a kudarcot, amikor a szervezetek sietve elfogadnak ígéretes megoldásokat anélkül, hogy teljesen megértenék a siker alapvető kritériumait. Én az alkalmazás fejlesztésekor azon a definíción tartottam magam, miszerint a hatékony gamifikáció arról szól, hogy az emberek személyes célokat érjenek el, azaz nem kizárólag a szervezeti célokra összpontosít. E szempont azonban nem kell, hogy elbátortalanítson attól, hogy közösségi célok szolgálatába állítsuk a gamifikációt, hiszen az egyéni és közösségi szempontok gyakran csupán különböző perspektívákra reflektálnak ugyanazon alapvető cél kapcsán. Dolgozatomban azt vizsgálom, hogy egy, a fentiek szellemében megalkotott mobilalkalmazás, gamifikációt alkalmazva, miként tud „egymást motiváljuk” hatást elérni egyéneknél, személyes és közösségi célok mentén.",
+    "keywords": [],
+    "generated_keywords": []
+  },
+  {
+    "major": "Neveléstudomány",
+    "year": 2024,
+    "title": "Gamifikáció: játékos motiváció az élet különböző területein és az oktatásban",
+    "students": [
+      {
+        "name": "Csizmadia László",
+        "major": "Sapientia EMTE, Marosvásárhelyi Kar, Informatika szak, 1. év"
+      }
+    ],
+    "teachers": [
+      {
+        "name": "Dr. Kátai Zoltán",
+        "university": "Sapientia EMTE, Marosvásárhelyi Kar, Matematika-Informatika Tanszék"
+      }
+    ],
+    "content": "A gamifikáció a játékok és játékelemek integrálását jelenti az élet nem-játékos területein, célja pedig az ottani folyamatok érdekessé és eredményessé tétele. Kiemelkedően hatékony lehet az oktatásban, az egészségügyben, kulturális területeken és a munkahelyi környezetben is, hozzájárulva minőségi fejlődésükhöz. Alapja az a feltevés, hogy a játékfejlesztésben bevált motivációs módszerek más, nem játékos kontextusokban is hatékonyak lehetnek. Az IKT forradalom új lehetőségeket teremtett a gamifikációnak, merthogy nemcsak a digitális szakadék kialakulását segítette elő, hanem innovatív gamifikációs megoldásokat is hozott magával. Az elmúlt években egyre magasabb minőségű termékek jelennek meg ezen a területen, melyek segítik a készségek fejlődését és ismeretek elsajátítását. Nő az iskolai alkalmazásra szánt játékok száma is, és számos kutatás igazolja ezek készségfejlesztő hatékonyságát. Ugyanakkor a Z generáció megjelenése miatt egyenesen szükségessé vált a digitális oktatási innovációk alkalmazása az oktatásban. A digitális bennszülöttnek számító Z generáció tagjai számára a digitális eszközökön való információkeresés természetes, és magas szintű digitális kompetenciákkal rendelkeznek. Ebbe a kontextusba illeszkedik a tanulók motivációjának növelését célzó általunk lefejlesztett WhiteSpace elnevezésű webalkalmazás is, mely játékelemek és mechanizmusok felhasználásával működik. A kidolgozott módszer arra az elvre is épít, hogy a modern tananyagokat klasszikusnak tekinthető játékelemekkel ötvözve különösen figyelemfelkeltő lehet. A tanulmányban bemutatott kutatás a módszer és eszköz hatékonyságát vizsgálja.",
+    "keywords": [],
+    "generated_keywords": [
+      "WhiteSpace"
+    ]
+  }
 ]

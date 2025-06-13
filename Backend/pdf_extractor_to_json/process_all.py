@@ -3,6 +3,7 @@
 import os
 import json
 from extract_text import extract_projects_from_pdf
+from extract_text2 import extract_projects_from_pdf_v2
 
 PDF_DIR = "pdfs"
 OUTPUT_PATH = "output/all_projects.json"
@@ -14,7 +15,7 @@ def process_all_pdfs():
         if filename.endswith(".pdf"):
             pdf_path = os.path.join(PDF_DIR, filename)
             print(f"📄 Feldolgozás: {filename}")
-            projects = extract_projects_from_pdf(pdf_path)
+            projects = extract_projects_from_pdf_v2(pdf_path)
             all_projects.extend(projects)
 
     print(f"\n✅ Összesen {len(all_projects)} dolgozat lett feldolgozva.")
